@@ -1,4 +1,4 @@
-repo
+lab6
 ====
 
-Project Description
+Lab 6: FB Login and AJAX
