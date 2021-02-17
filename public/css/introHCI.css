@@ -42,7 +42,7 @@ body{
 */
 
 
-/*menu fixed at top*/
+/*menu fixed at top & dropdown items*/
 .top-button{
      margin-top: 5%;
      margin-right: 5%;
@@ -54,6 +54,12 @@ body{
      font-size: 14pt;
 }
 
+.active, .dropdown-item:hover{
+     font-weight: 800 !important;
+     background-color: white !important;
+     color: black !important;
+}
+
 /*primarybtn on the bottom of home page*/
 .primarybtn{
      margin-top: 10%;
@@ -61,22 +67,26 @@ body{
      
 }
 
-.fixed-bottom{
+.home-bottom{
      background-color: white;
      display:flex;
      justify-content: center;
      box-shadow: 0px 5px 15px gray;
 }
+     
 
-/*for button in general*/
+/*for general buttons*/
 .btn-primary{
      font-size: 20pt;
      /*background: #074EE8;*/
      background: gray !important;
      border-radius: 4px;
 }
+.btn{
+     font-size: 12pt !important;  
+}
 
-/*things for the card*/
+/*things for the card on home page*/
 .card{
      margin-bottom: 10%;
 }
@@ -85,9 +95,7 @@ body{
      color: gray !important;
      font-size: 12pt;
 }
-.btn{
-     font-size: 12pt !important;  
-}
+
 
 .card-iteminline{/*top part of the card*/
      display:flex;
@@ -95,6 +103,20 @@ body{
 }
 
 
+/*for filter only*/
+.bottom-nav {
+     background-color: white;
+     display:flex;
+     justify-content: space-evenly;
+     margin-top: 10%;
+     margin-bottom: 10%;
+}
+
+/*center aligned*/
+/*used in About: name card*/
+.center-aligned{
+     text-align: center;
+}
 
 
 

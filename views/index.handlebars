@@ -47,16 +47,16 @@
 							</svg>
 						</button>
 						<div class="dropdown-menu dropdown-menu-right">
-							<button class="dropdown-item" type="button" style="background-color: grey; color: white;">Log in</button>
-							<button class="dropdown-item" type="button">Profile</button>
-							<button class="dropdown-item" type="button">Reminder</button>
-							<button class="dropdown-item" type="button">About</button>
+						<a href="/"> <button class="dropdown-item active" type="button">Home</button> </a>
+                            <a href="/setting"> <button class="dropdown-item" type="button">Setting</button></a>
+							<a href="/about"> <button class="dropdown-item" type="button">About</button></a>
+							<a href="#"> <button class="dropdown-item" type="button" style="background-color: grey; color: white;">Log in</button></a>
 						</div>
 					</div>
 			</div>
 		</div>
 		
-		<!--
+		<!-- log in w/facebook
 			<p class="facebookLogin">Please login through Facebook</p>
 			<fb:login-button id="fb_button" scope="public_profile,email" onlogin="checkLoginState();">
 			</fb:login-button>
@@ -100,32 +100,17 @@
 
 
 		<!--button nav-->
-		<div class="fixed-bottom">
-			<button type="button" class="btn-primary w-75 primarybtn">Get new idea!</button>
-		</div>
+		<a href="/filter">
+			<div class="fixed-bottom">
+				<div class="home-bottom">
+					<button type="button" class="btn-primary w-75 primarybtn">Get new idea!</button>
+				</div>
+			</div>
+		</a>
 			
 
 
 	</div>
-
-
-<script>
-  import { mdbNavbar, mdbNavItem, mdbNavbarNav, mdbNavbarToggler, mdbContainer, mdbRow, mdbInput, mdbNavbarBrand, mdbIcon } from 'mdbvue';
-  export default {
-    name: 'HamburgerMenuPage',
-    components: {
-      mdbNavbar,
-      mdbNavItem,
-      mdbNavbarNav,
-      mdbNavbarToggler,
-      mdbContainer,
-      mdbRow,
-      mdbInput,
-      mdbNavbarBrand,
-      mdbIcon
-    }
-  }
-</script>
 
 
 </body>
