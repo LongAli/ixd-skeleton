@@ -46,7 +46,6 @@ p {
 	flex-direction: column;
 }
 
-
 @media (max-width: 575.98px) {
 	.container {
 		margin: 24px;
