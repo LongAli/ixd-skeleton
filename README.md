@@ -1,4 +1,4 @@
-lab6
+Fluffy socks 120 app
 ====
 
-Lab 6: FB Login and AJAX
+Team 4: app that reminds breaktime and offers breaktime ideas
