@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>LogIn</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="/css/introHCI.css" rel="stylesheet">
+	
+
+<!--FB account log in -->
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/introHCI.js"></script>
+	{{> facebook}}
+	<script src="/js/facebook.js"></script>
+
+</head>
+<body>
+	<!-- this is a comment in HTML -->
+	<div class="container">
+		<div class="jumbotron">
+  			
+  			<h1>Lacuna</h1>
+  			<h2>Matata</h2>
+		</div>
+
+
+		<img src="../public/images/yay.jpeg"/>
+
+		<p class="facebookLogin" >
+				<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+				</fb:login-button>
+		</p>
+
+
+
+ 
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/js/bootstrap.min.js"></script>
+  </body>
+</html>

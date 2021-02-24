@@ -14,6 +14,8 @@ var filter = require('./routes/filter');
 var activity = require('./routes/activity');
 var setting = require('./routes/setting');
 var about = require('./routes/about');
+var logIn = require('./routes/logIn');
+
 // Example route
 // var user = require('./routes/user');
 
@@ -46,6 +48,7 @@ app.get('/activity', activity.view);
 app.get('/setting', setting.view);
 app.get('/about', about.view);
 app.get('/project/:id', project.projectInfo);
+app.get('/logIn', logIn.view);
 // Example route
 // app.get('/users', user.list);
 
