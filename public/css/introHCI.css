@@ -116,11 +116,6 @@ body {
 	text-align: center;
 }
 
-form {
-	display: flex;
-	margin-top: 1000px;
-}
-
 .form-content {
 	padding: 1rem;
 }
