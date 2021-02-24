@@ -1,4 +1,3 @@
-
 /**
  * Module dependencies.
  */
@@ -6,7 +5,7 @@
 var express = require('express');
 var http = require('http');
 var path = require('path');
-var handlebars = require('express3-handlebars')
+var handlebars = require('express3-handlebars');
 
 var index = require('./routes/index');
 var project = require('./routes/project');
@@ -14,8 +13,12 @@ var filter = require('./routes/filter');
 var activity = require('./routes/activity');
 var setting = require('./routes/setting');
 var about = require('./routes/about');
+<<<<<<< HEAD
 var logIn = require('./routes/logIn');
 
+=======
+var reminder = require('./routes/reminder');
+>>>>>>> f8482eea47e7493abac48645b97ad29385e1d7b0
 // Example route
 // var user = require('./routes/user');
 
@@ -38,7 +41,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // development only
 if ('development' == app.get('env')) {
-  app.use(express.errorHandler());
+	app.use(express.errorHandler());
 }
 
 // Add routes here
@@ -47,11 +50,12 @@ app.get('/filter', filter.view);
 app.get('/activity', activity.view);
 app.get('/setting', setting.view);
 app.get('/about', about.view);
+app.get('/reminder', reminder.view);
 app.get('/project/:id', project.projectInfo);
 app.get('/logIn', logIn.view);
 // Example route
 // app.get('/users', user.list);
 
-http.createServer(app).listen(app.get('port'), function(){
-  console.log('Express server listening on port ' + app.get('port'));
+http.createServer(app).listen(app.get('port'), function() {
+	console.log('Express server listening on port ' + app.get('port'));
 });
