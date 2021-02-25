@@ -53,9 +53,9 @@
 						<input type="checkbox" class="form-check-input" id="exampleCheck1">
 						<label class="form-check-label" for="exampleCheck1">Check me out</label>
 					</div> --}}
-					<form action="/">
-						<button type="submit" class="btn btn-primary btn-spacing btn-block" onclick="redirect()">Sign In</button>
-					</form>
+					<a href="/index">
+						<button type="button" class="btn btn-primary btn-spacing btn-block">Sign In</button>
+					</a>
 					
 				</form>
 			</div>
@@ -69,11 +69,7 @@
 				<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
 				</fb:login-button>
 		</p> --}}
-		<script>
-			function redirect() {
-				window.location.replace("http://localhost:3000");
-			}
-		</script>
+ 
 
  
 	{{!-- js --}}

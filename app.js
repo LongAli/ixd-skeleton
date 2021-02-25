@@ -46,7 +46,7 @@ if ('development' == app.get('env')) {
 }
 
 // Add routes here
-app.get('/', index.view);
+app.get('/', logIn.view);
 app.get('/filter', filter.view);
 app.get('/filter2', filter2.view);
 app.get('/filter3', filter3.view);
@@ -57,6 +57,7 @@ app.get('/filtered', filtered.view);
 app.get('/project/:id', project.projectInfo);
 app.get('/logIn', logIn.view);
 app.get('/complete', complete.view);
+app.get('/index', index.view);
 
 http.createServer(app).listen(app.get('port'), function() {
 	console.log('Express server listening on port ' + app.get('port'));
