@@ -43,6 +43,10 @@ body {
 */
 
 /*menu fixed at top & dropdown items*/
+#name {
+	color: black;
+}
+
 .name {
 	margin-top: 1rem;
 	margin-left: 1rem;
@@ -51,6 +55,13 @@ body {
 	=======: #212529 !important;
 	font-family: >>>>>>> 16e7ced543a86fc96f9ac44d4b93123f62594bcf;
 }
+
+.arrow {
+	position: absolute;
+	margin-top: 2rem;
+	margin-left: -1rem;
+}
+
 .top-button {
 	margin-top: 5%;
 	margin-right: 5%;
@@ -216,10 +227,6 @@ a {
 	display: block;
 }
 
-.signin {
-	max-resolution: 0 auto;
-}
-
 .header-display {
 	display: flex;
 	flex-direction: row;
@@ -229,4 +236,14 @@ a {
 	margin-top: 35%;
 	margin-right: 5%;
 	margin-left: 5%;
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.row {
+	overflow: hidden;
 }
