@@ -9,11 +9,18 @@ $(document).ready(function() {
  * Function that is called when the document is ready.
  */
 function initializePage() {
-	$('.project a').click(addProjectDetails);
-	// initCamera();
+
+	$(".card-link").click(deleteClick);
 	// $('#colorBtn').click(randomizeColors);
 }
-
+function deleteClick(e){
+  //console.log(data);
+  e.preventDefault();
+  console.log("The Delete Functionality has not been implemented yet :)");
+  //var toDel = data.toLog.unshift(this);
+  //data.toLog.splice(toDel,1);
+  //data.toLog.unshift("HI");
+}
 /*
  * Make an AJAX call to retrieve project details and add it in
  */
