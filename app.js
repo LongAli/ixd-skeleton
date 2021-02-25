@@ -13,7 +13,7 @@ var filter = require('./routes/filter');
 var activity = require('./routes/activity');
 var setting = require('./routes/setting');
 var about = require('./routes/about');
-var reminder = require('./routes/reminder');
+var complete = require('./routes/complete');
 var logIn = require('./routes/logIn');
 // Example route
 // var user = require('./routes/user');
@@ -46,9 +46,9 @@ app.get('/filter', filter.view);
 app.get('/activity', activity.view);
 app.get('/setting', setting.view);
 app.get('/about', about.view);
-app.get('/reminder', reminder.view);
 app.get('/project/:id', project.projectInfo);
 app.get('/logIn', logIn.view);
+app.get('/complete', complete.view);
 
 http.createServer(app).listen(app.get('port'), function() {
 	console.log('Express server listening on port ' + app.get('port'));

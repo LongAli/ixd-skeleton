@@ -42,10 +42,10 @@ body {
 */
 
 /*menu fixed at top & dropdown items*/
-#name{
+#name {
 	margin-top: 2%;
-	color: #657DC4 !important;
-	font-family: 
+	color: #657dc4 !important;
+	font-family: ;
 }
 .top-button {
 	margin-top: 5%;
@@ -54,7 +54,7 @@ body {
 	justify-content: flex-end;
 }
 
-.btn-secondary{
+.btn-secondary {
 	background-color: white !important;
 	border-color: white !important;
 }
@@ -67,11 +67,11 @@ body {
 .dropdown-item:hover {
 	font-weight: 800 !important;
 	background-color: white !important;
-	color: #657DC4 !important;
+	color: #657dc4 !important;
 }
 
 /*primarybtn on the bottom of home page*/
-.primarybtn{
+.primarybtn {
 	margin-top: 10%;
 	margin-bottom: 10%;
 }
@@ -87,8 +87,8 @@ body {
 /*for general buttons*/
 .btn-primary {
 	font-size: 20pt;
-	background-color: #657DC4 !important;
-	border-color: #657DC4 !important;
+	background-color: #657dc4 !important;
+	border-color: #657dc4 !important;
 	border-radius: 4px;
 	background-image: none;
 	box-shadow: none;
@@ -97,6 +97,10 @@ body {
 }
 .btn {
 	font-size: 12pt !important;
+}
+
+.btn-spacing {
+	margin: 2rem 0;
 }
 
 /*things for the card on home page*/
@@ -126,8 +130,7 @@ body {
 }
 
 /* choice */
-.multiple-unselect{
-
+.multiple-unselect {
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
@@ -139,17 +142,12 @@ body {
 	left: 0px;
 	top: 0px;
 
-	background: #FFFFFF;
-	border: 1px solid #BDBDBD;
+	background: #ffffff;
+	border: 1px solid #bdbdbd;
 	box-sizing: border-box;
 	border-radius: 80px;
 	margin-bottom: 5%;
-
 }
-
-
-
-
 
 /*center aligned*/
 /*used in About: name card*/
@@ -173,4 +171,25 @@ body {
 	opacity: 1;
 }
 
+.form-content {
+	padding: 1rem;
+}
 
+.footer {
+	margin-top: 4vh;
+	display: flex;
+	flex-direction: column;
+	/* justify-content: space-between; */
+}
+
+.row-content {
+	padding: 1rem;
+}
+
+a {
+	display: block;
+}
+
+.signin {
+	max-resolution: 0 auto;
+}
