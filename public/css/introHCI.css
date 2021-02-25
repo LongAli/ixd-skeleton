@@ -1,6 +1,6 @@
 /* applies to anything of class "example-class-selector" */
 body {
-	font-family: Chalkboard;
+	font-family: 'Rubik', sans-serif;
 	font-style: normal;
 	font-weight: normal;
 }
@@ -42,11 +42,21 @@ body {
 */
 
 /*menu fixed at top & dropdown items*/
+#name{
+	margin-top: 2%;
+	color: #657DC4 !important;
+	font-family: 
+}
 .top-button {
-	margin-top: 10%;
+	margin-top: 5%;
 	margin-right: 5%;
 	display: flex;
 	justify-content: flex-end;
+}
+
+.btn-secondary{
+	background-color: white !important;
+	border-color: white !important;
 }
 
 .dropdown-item {
@@ -57,15 +67,16 @@ body {
 .dropdown-item:hover {
 	font-weight: 800 !important;
 	background-color: white !important;
-	color: black !important;
+	color: #657DC4 !important;
 }
 
 /*primarybtn on the bottom of home page*/
-.primarybtn {
+.primarybtn{
 	margin-top: 10%;
 	margin-bottom: 10%;
 }
 
+/*the bottom button background*/
 .home-bottom {
 	background-color: white;
 	display: flex;
@@ -76,9 +87,13 @@ body {
 /*for general buttons*/
 .btn-primary {
 	font-size: 20pt;
-	/*background: #074EE8;*/
-	background: gray !important;
+	background-color: #657DC4 !important;
+	border-color: #657DC4 !important;
 	border-radius: 4px;
+	background-image: none;
+	box-shadow: none;
+	text-shadow: none;
+	background-position-y: 0;
 }
 .btn {
 	font-size: 12pt !important;
@@ -110,18 +125,52 @@ body {
 	margin-bottom: 10%;
 }
 
+/* choice */
+.multiple-unselect{
+
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 10px;
+
+	position: relative;
+	width: 70%;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+
+	background: #FFFFFF;
+	border: 1px solid #BDBDBD;
+	box-sizing: border-box;
+	border-radius: 80px;
+	margin-bottom: 5%;
+
+}
+
+
+
+
+
 /*center aligned*/
 /*used in About: name card*/
 .center-aligned {
 	text-align: center;
 }
 
-.form-content {
-	padding: 1rem;
+.bg-modal {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+
+	position: absolute;
+	top: 0;
 }
 
-.footer {
-	margin-top: 4vh;
-	display: flex;
-	justify-content: space-between;
+.modal-content {
+	width: 300px;
+	height: 300px;
+	background-color: white;
+	opacity: 1;
 }
+
+
