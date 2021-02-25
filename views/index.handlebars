@@ -71,21 +71,23 @@
 		<!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
 		<!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
 		<br><br><br><br><br><br><br><br>
-		{{#each projects}}
-		<div class="card w-80" id="{{id}}">
+		{{#each toLog}}
+		<div class="card w-80">
 			<div class="card-body">
 				<div class="card-iteminline">
-					<h2 class="card-title">{{name}}</h2>
-					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#F59292" class="bi bi-share" viewBox="0 0 16 16">
+
+					<h2 class="card-title">{{Activity}}</h2>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+
 						<path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
 					</svg>
 				</div>
-				<h3 class="card-subtitle mb-2 text-muted" >{{time}}input time in the database here</h3>
+				<h3 class="card-subtitle mb-2 text-muted" >{{minTime}} minutes</h3>
 			</div>
-				<img class="card-img-top" src="images/{{image}}" alt="Lorem Pixel image">
+				<img class="card-img-top" src="{{Image}}" alt="Unsplash image">
 			<div class="card-body">
 				<div class="details card-text">
-					<h4>{{description}}input description of project in the database here</h4>
+					<h4>{{Description}}</h4>
 				</div>
 				<br>
 				<div class="card-iteminline">
