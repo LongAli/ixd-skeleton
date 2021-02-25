@@ -1,5 +1,5 @@
 function timer() {
-	var countdownTime = 300;
+	var countdownTime = 10;
 	var time = countdownTime,
 		minutes,
 		seconds;
@@ -13,7 +13,7 @@ function timer() {
 		document.querySelector('#timer').textContent = minutes + ':' + seconds;
 
 		if (--time < 0) {
-			time = duration;
+			time = 0;
 		}
 	}, 1000);
 }

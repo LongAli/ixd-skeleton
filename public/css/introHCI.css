@@ -44,9 +44,24 @@ body {
 
 /*menu fixed at top & dropdown items*/
 #name {
-	margin-top: 2%;
-	color: #212529 !important;
+	color: black;
 }
+
+.name {
+	margin-top: 1rem;
+	margin-left: 1rem;
+	<<<<<<<: #657dc4 !important;
+	font-family: ;
+	=======: #212529 !important;
+	font-family: >>>>>>> 16e7ced543a86fc96f9ac44d4b93123f62594bcf;
+}
+
+.arrow {
+	position: absolute;
+	margin-top: 2rem;
+	margin-left: -1rem;
+}
+
 .top-button {
 	margin-top: 5%;
 	margin-right: 5%;
@@ -100,7 +115,7 @@ body {
 }
 
 .btn-spacing {
-	margin: 2rem 0;
+	margin: 8px 0;
 }
 
 /*things for the card on home page*/
@@ -118,7 +133,6 @@ body {
 	/*top part of the card*/
 	display: flex;
 	justify-content: space-between;
-
 }
 
 /*for filter only*/
@@ -150,11 +164,10 @@ body {
 	margin-bottom: 5%;
 }
 /*filter 2*/
-.select-all{
-
+.select-all {
 	padding: 10px 20px;
 	margin: 10px 0px;
-	display: inline-block;
+	<<<<<<<: inline-block;
 	align-items: flex-start;
 	position: relative;
 
@@ -162,9 +175,9 @@ body {
 	height: 46px;
 	left: 10px;
 	top: 10px;
-	
-	background: #FFFFFF;
-	border: 1px solid #BDBDBD;
+
+	background: #ffffff;
+	border: 1px solid #bdbdbd;
 	box-sizing: border-box;
 	border-radius: 80px;
 }
@@ -202,6 +215,10 @@ body {
 	/* justify-content: space-between; */
 }
 
+.content-spacing {
+	padding: 1rem;
+}
+
 .row-content {
 	padding: 1rem;
 }
@@ -210,12 +227,23 @@ a {
 	display: block;
 }
 
-.signin {
-	max-resolution: 0 auto;
+.header-display {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
-
-.aboutProject{
+.aboutProject {
 	margin-top: 35%;
 	margin-right: 5%;
 	margin-left: 5%;
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.row {
+	overflow: hidden;
 }
