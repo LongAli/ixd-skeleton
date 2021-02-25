@@ -31,7 +31,7 @@
 		<!--fixed menu top--> 
 			<!--Navbar-->
 		<div class="jumbotron fixed-top">
-		<a href="/">
+		<a href="/index">
 			<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#212529" class="bi bi-chevron-left" viewBox="0 0 24 24">
 				<path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
 			</svg>
@@ -73,11 +73,11 @@
             </svg>
             </a>
 			
-			<!-- <a href="/activity"  -->
+			<!--<a href="/activity"> </a>-->
 				<div class = "btn btn-primary filter_button">
 					Let's do it!
 				</div>
-			<!-- </a> -->
+			
 			</div>
 		</div>
 	</div>
@@ -87,9 +87,17 @@
 </html>
 
 
+<script>
+	$(".filter_button").click(function(){
+		console.log(localStorage.getItem("currentId"));
+		console.log(localStorage.getItem("currentSelect"));
+		console.log(localStorage.getItem("selectedCategory"));
+	});
+</script>
 
 
 <script>
+	
 	$(".multiple-unselect").click(function(){
 		var currentSelect = $(this).attr("id");
 		var currentBg = $(this).css("background-color");
@@ -97,7 +105,7 @@
 
 		//check whether selected already
 		if (currentBg === "rgb(101, 125, 196)"){
-			localStorage.setItem("currentSelect", null);
+			localStorage.setItem("currentSelect", 'no');
 			$(this).css("background-color", "#FFFFFF");
 			$(this).css("color", "#212529");
 		} else {
@@ -125,5 +133,4 @@
 			}
 		});
 	}
-
 </script>

@@ -43,13 +43,10 @@ body {
 */
 
 /*menu fixed at top & dropdown items*/
-.name {
+#name {
+	color: #212529 !important;
 	margin-top: 1rem;
 	margin-left: 1rem;
-	<<<<<<<: #657dc4 !important;
-	font-family: ;
-	=======: #212529 !important;
-	font-family: >>>>>>> 16e7ced543a86fc96f9ac44d4b93123f62594bcf;
 }
 .top-button {
 	margin-top: 5%;
@@ -156,7 +153,7 @@ body {
 .select-all {
 	padding: 10px 20px;
 	margin: 10px 0px;
-	<<<<<<<: inline-block;
+	display: inline-block;
 	align-items: flex-start;
 	position: relative;
 

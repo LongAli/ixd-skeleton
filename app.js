@@ -17,7 +17,6 @@ var setting = require('./routes/setting');
 var about = require('./routes/about');
 var complete = require('./routes/complete');
 var logIn = require('./routes/logIn');
-var logIn = require('./routes/logIn');
 var reminder = require('./routes/reminder');
 var filtered = require('./routes/filtered');
 // Example route
