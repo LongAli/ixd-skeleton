@@ -19,6 +19,7 @@ var complete = require('./routes/complete');
 var logIn = require('./routes/logIn');
 var logIn = require('./routes/logIn');
 var reminder = require('./routes/reminder');
+var filtered = require('./routes/filtered');
 // Example route
 // var user = require('./routes/user');
 
@@ -52,6 +53,7 @@ app.get('/filter3', filter3.view);
 app.get('/activity', activity.view);
 app.get('/setting', setting.view);
 app.get('/about', about.view);
+app.get('/filtered', filtered.view);
 app.get('/project/:id', project.projectInfo);
 app.get('/logIn', logIn.view);
 app.get('/complete', complete.view);
