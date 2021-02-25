@@ -156,9 +156,7 @@ body {
 .select-all {
 	padding: 10px 20px;
 	margin: 10px 0px;
-
-	display: inline-block;
-
+	<<<<<<<: inline-block;
 	align-items: flex-start;
 	position: relative;
 
@@ -226,4 +224,9 @@ a {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+}
+.aboutProject {
+	margin-top: 35%;
+	margin-right: 5%;
+	margin-left: 5%;
 }
