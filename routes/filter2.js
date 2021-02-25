@@ -1,11 +1,11 @@
 /*
- * GET filter1.
+ * GET filter2.
  */
 
 
 
 exports.view = function(request, response){
-    response.render('filter', {
+    response.render('filter2', {
         'activities': [
             {
               "Category": "exercise",
