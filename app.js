@@ -15,16 +15,8 @@ var filter3 = require('./routes/filter3');
 var activity = require('./routes/activity');
 var setting = require('./routes/setting');
 var about = require('./routes/about');
-<<<<<<< HEAD
 var complete = require('./routes/complete');
 var logIn = require('./routes/logIn');
-=======
-
-var logIn = require('./routes/logIn');
-
-
-var reminder = require('./routes/reminder');
->>>>>>> 16e7ced543a86fc96f9ac44d4b93123f62594bcf
 // Example route
 // var user = require('./routes/user');
 
@@ -51,7 +43,7 @@ if ('development' == app.get('env')) {
 }
 
 // Add routes here
-app.get('/', index.view);
+app.get('/', logIn.view);
 app.get('/filter', filter.view);
 app.get('/filter2', filter2.view);
 app.get('/filter3', filter3.view);
@@ -61,6 +53,7 @@ app.get('/about', about.view);
 app.get('/project/:id', project.projectInfo);
 app.get('/logIn', logIn.view);
 app.get('/complete', complete.view);
+app.get('/index', index.view);
 
 http.createServer(app).listen(app.get('port'), function() {
 	console.log('Express server listening on port ' + app.get('port'));

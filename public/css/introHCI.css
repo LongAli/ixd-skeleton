@@ -43,15 +43,13 @@ body {
 */
 
 /*menu fixed at top & dropdown items*/
-#name {
-	margin-top: 2%;
-<<<<<<< HEAD
-	color: #657dc4 !important;
+.name {
+	margin-top: 1rem;
+	margin-left: 1rem;
+	<<<<<<<: #657dc4 !important;
 	font-family: ;
-=======
-	color: #212529 !important;
-	font-family: 
->>>>>>> 16e7ced543a86fc96f9ac44d4b93123f62594bcf
+	=======: #212529 !important;
+	font-family: >>>>>>> 16e7ced543a86fc96f9ac44d4b93123f62594bcf;
 }
 .top-button {
 	margin-top: 5%;
@@ -106,7 +104,7 @@ body {
 }
 
 .btn-spacing {
-	margin: 2rem 0;
+	margin: 8px 0;
 }
 
 /*things for the card on home page*/
@@ -124,7 +122,6 @@ body {
 	/*top part of the card*/
 	display: flex;
 	justify-content: space-between;
-
 }
 
 /*for filter only*/
@@ -137,11 +134,7 @@ body {
 }
 
 /* choice */
-<<<<<<< HEAD
 .multiple-unselect {
-=======
-.multiple-unselect{
->>>>>>> 16e7ced543a86fc96f9ac44d4b93123f62594bcf
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
@@ -158,15 +151,11 @@ body {
 	box-sizing: border-box;
 	border-radius: 80px;
 	margin-bottom: 5%;
-<<<<<<< HEAD
-=======
 }
 /*filter 2*/
-.select-all{
-
+.select-all {
 	padding: 10px 20px;
 	margin: 10px 0px;
-
 
 	display: inline-block;
 
@@ -177,12 +166,11 @@ body {
 	height: 46px;
 	left: 10px;
 	top: 10px;
-	
-	background: #FFFFFF;
-	border: 1px solid #BDBDBD;
+
+	background: #ffffff;
+	border: 1px solid #bdbdbd;
 	box-sizing: border-box;
 	border-radius: 80px;
->>>>>>> 16e7ced543a86fc96f9ac44d4b93123f62594bcf
 }
 
 /*center aligned*/
@@ -218,6 +206,10 @@ body {
 	/* justify-content: space-between; */
 }
 
+.content-spacing {
+	padding: 1rem;
+}
+
 .row-content {
 	padding: 1rem;
 }
@@ -228,4 +220,10 @@ a {
 
 .signin {
 	max-resolution: 0 auto;
+}
+
+.header-display {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
