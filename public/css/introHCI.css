@@ -45,13 +45,7 @@ body {
 /*menu fixed at top & dropdown items*/
 #name {
 	margin-top: 2%;
-<<<<<<< HEAD
-	color: #657dc4 !important;
-	font-family: ;
-=======
 	color: #212529 !important;
-	font-family: 
->>>>>>> 16e7ced543a86fc96f9ac44d4b93123f62594bcf
 }
 .top-button {
 	margin-top: 5%;
@@ -137,11 +131,7 @@ body {
 }
 
 /* choice */
-<<<<<<< HEAD
 .multiple-unselect {
-=======
-.multiple-unselect{
->>>>>>> 16e7ced543a86fc96f9ac44d4b93123f62594bcf
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
@@ -158,18 +148,13 @@ body {
 	box-sizing: border-box;
 	border-radius: 80px;
 	margin-bottom: 5%;
-<<<<<<< HEAD
-=======
 }
 /*filter 2*/
 .select-all{
 
 	padding: 10px 20px;
 	margin: 10px 0px;
-
-
 	display: inline-block;
-
 	align-items: flex-start;
 	position: relative;
 
@@ -182,7 +167,6 @@ body {
 	border: 1px solid #BDBDBD;
 	box-sizing: border-box;
 	border-radius: 80px;
->>>>>>> 16e7ced543a86fc96f9ac44d4b93123f62594bcf
 }
 
 /*center aligned*/
@@ -228,4 +212,10 @@ a {
 
 .signin {
 	max-resolution: 0 auto;
+}
+
+.aboutProject{
+	margin-top: 35%;
+	margin-right: 5%;
+	margin-left: 5%;
 }

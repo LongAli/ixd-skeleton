@@ -15,16 +15,10 @@ var filter3 = require('./routes/filter3');
 var activity = require('./routes/activity');
 var setting = require('./routes/setting');
 var about = require('./routes/about');
-<<<<<<< HEAD
 var complete = require('./routes/complete');
 var logIn = require('./routes/logIn');
-=======
-
 var logIn = require('./routes/logIn');
-
-
 var reminder = require('./routes/reminder');
->>>>>>> 16e7ced543a86fc96f9ac44d4b93123f62594bcf
 // Example route
 // var user = require('./routes/user');
 
