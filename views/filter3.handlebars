@@ -73,11 +73,11 @@
             </svg>
             </a>
 			
-			<a href="/activity" 
+			<!--<a href="/activity"> 
 				<div class = "btn btn-primary filter_button">
 					Let's do it!
 				</div>
-			</a>
+			</a>-->
 			</div>
 		</div>
 	</div>
@@ -87,9 +87,17 @@
 </html>
 
 
+<script>
+	$(".filter_button").click(function(){
+		console.log(localStorage.getItem("currentId"));
+		console.log(localStorage.getItem("currentSelect"));
+		console.log(localStorage.getItem("selectedCategory"));
+	});
+</script>
 
 
 <script>
+	
 	$(".multiple-unselect").click(function(){
 		var currentSelect = $(this).attr("id");
 		var currentBg = $(this).css("background-color");
@@ -97,7 +105,7 @@
 
 		//check whether selected already
 		if (currentBg === "rgb(101, 125, 196)"){
-			localStorage.setItem("currentSelect", null);
+			localStorage.setItem("currentSelect", 'no');
 			$(this).css("background-color", "#FFFFFF");
 			$(this).css("color", "#212529");
 		} else {
@@ -125,5 +133,17 @@
 			}
 		});
 	}
-
 </script>
+
+<!--
+<script>
+	$(".filter_button").click(function(){
+	window.location.href = '/filtered?time='+localStorage.getItem("currentId");
+	//window.location.href = '/filtered?time=category='+ JSON.parse(localStorage.getItem("selectedCategory"));
+	//window.location.href = '/filtered?time=category=tag='+ localStorage.getItem("currentSelect");
+
+	//console.log(localStorage.getItem("currentId"));
+	//console.log(localStorage.getItem("selectedCategory"));
+	//console.log(localStorage.getItem("currentSelect"));
+	});
+</script>-->
