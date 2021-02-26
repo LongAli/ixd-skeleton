@@ -77,7 +77,7 @@
             const btn = document.querySelector('#camera-button');
             const resultPara = document.querySelector('.result');
 
-            btn.addEventListener('click', () => {
+            btn.addEventListener('click', async () => {
                 navigator
                     .share(shareData)
                     .then(() => (resultPara.textContent = 'MDN shared successfully'))
