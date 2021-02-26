@@ -72,7 +72,7 @@
 						<option value="3">Monthly</option>
 					</select>
 					<div class="input-group-append">
-						<button class="btn btn-outline-secondary" type="button">Save</button>
+						<button class="btn btn-outline-secondary" type="button" id="save-time">Save</button>
 					</div>
 				</div>
 			</div>
@@ -86,7 +86,7 @@
 						<option value="3">Evening</option>
 					</select>
 					<div class="input-group-append">
-						<button class="btn btn-outline-secondary" type="button">Save</button>
+						<button class="btn btn-outline-secondary" type="button" id="save-when">Save</button>
 					</div>
 				</div>
 			</div>
@@ -94,14 +94,32 @@
 
 		<div class="row">
 			<div class="col-sm footer">
-				<button type="button" class="btn btn-primary btn">Delete Account</button>
-				<button type="button" class="btn btn-outline-primary btn-spacing">Manage Account</button>
+				<button type="button" class="btn btn-primary btn" id="del">Delete Account</button>
+				<button type="button" class="btn btn-outline-primary btn-spacing" id="manage">Manage Account</button>
 			</div>
 		</div>
 
 	</div>
 
 	{{!-- js --}}
+	<script>
+		const manageBtn = document.getElementById('manage');
+		const delBtn = document.getElementById('del');
+		const saveBtn1 = document.getElementById('save-time');
+		const saveBtn2 = document.getElementById('save-when');
+		manageBtn.addEventListener('click', function (e) {
+				alert('Coming Soon!');
+		});
+		delBtn.addEventListener('click', function (e) {
+				alert('Coming Soon!');
+		});
+		saveBtn1.addEventListener('click', function (e) {
+				alert('Successfully Saved');
+		});
+		saveBtn2.addEventListener('click', function (e) {
+				alert('Successfully Saved');
+		});
+	</script>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
 		crossorigin="anonymous"></script>
