@@ -77,11 +77,14 @@
             const btn = document.querySelector('#camera-button');
             const resultPara = document.querySelector('.result');
 
-            btn.addEventListener('click', async () => {
-                navigator
-                    .share(shareData)
-                    .then(() => (resultPara.textContent = 'MDN shared successfully'))
-                    .catch((e) => (resultPara.textContent = 'Error: ' + e));
+           btn.addEventListener('click', () => {
+                navigator.share(shareData)
+                    .then(() =>
+                        resultPara.textContent = 'shared successfully'
+                    )
+                    .catch((e) =>
+                        resultPara.textContent = 'Error: ' + e
+                    )
             });
 
     </script>
