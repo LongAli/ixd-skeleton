@@ -75,16 +75,13 @@
                 url: 'https://a6-lacuna.herokuapp.com/'
             };
 
-            const btn = document.getElementById('camera-button');
-            const resultPara = document.querySelector('.result');
+        const btn = document.getElementById('camera-button');
+        const resultPara = document.querySelector('.result');
 
-           
-
-
-           btn.addEventListener('click', () => {
-                navigator.share({ title: document.title, text: window.location.href, url: window.location.href }).then(() => console.log('Successful share'),
-                   error => console.log('Error sharing:', error));
-            });
+        btn.addEventListener('click', () => {
+            navigator.share({ title: 'title', text: 'thanks', url: window.location.href }).then(() => alert('Successful share'),
+                error => console.log('Error sharing:', error));
+        });
 
     </script>
     

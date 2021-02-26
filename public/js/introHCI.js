@@ -51,10 +51,14 @@ function callBackFn(result) {
 	$(`#project${result['id']} .details`).html(projectHTML);
 }
 
-fetch('/actLog.json')
-	.then(function(res) {
-		return res.json();
-	})
-	.then(function(data) {
-		console.log(data);
-	});
+// fetch('/actLog.json')
+// 	.then(function(res) {
+// 		return res.json();
+// 	})
+// 	.then(function(data) {
+// 		console.log(data);
+// 	});
+
+function comingSoon(e) {
+	alert('Coming Soon!');
+}
