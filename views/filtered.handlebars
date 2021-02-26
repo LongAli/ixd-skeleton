@@ -36,17 +36,17 @@
 		<div class="row">
 			<div class="col-12 col-sm content">
 			
-            {{#each activities}}
-				<div class="video">
+            {{#each activites}}
+				{{!-- <div class="video">
 					<iframe width="420" height="315" src={{Link}}>
 					</iframe>
-				</div>
+				</div> --}}
 
                 <img class="card-img-top" src="{{Image}}" alt="Unsplash image">
 
-                <h1 class="title">{{Activity}}name of activity</h1>
-				<p class="description">{{Description}}Ten minute of sun salutations with Instructor Nina.</p>
-				<h3 id="timer">0:00</h3>
+                <h1 class="title">{{Activity}}</h1>
+				<h4 class="description">{{Description}}Ten minute of sun salutations with Instructor Nina.</h4>
+				<h3 id="timer">{{minTime}} min</h3>
 			</div>
 			{{/each}}
 		</div>

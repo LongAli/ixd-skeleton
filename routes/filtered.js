@@ -1,8 +1,7 @@
 
 /*
- * Search in database based on filter function.
-1st
- 1 - <=10/ 2 - <=20/ 3 - <=30/ 4 - <=60 / 5 - >60/ 6 - no pre
+ * Filtered activity.
+1 - <=10/ 2 - <=20/ 3 - <=30/ 4 - <=60 / 5 - >60/ 6 - no pre
 2nd
 "a" -Exercise
 "b" -Music
@@ -17,91 +16,45 @@
 in 
 out
 no
- Category
- minTime
- Tags
- */
-var activities = require('../activites.json');
+Category
+minTime
+Tags
+*/
 
 
+var activities = require("../activites.json");
 
-exports.view = function(request, response){
-    response.render('filtered', activities);
-    console.log(activities.activites[0].minTime);
-};
-
-exports.filteredInfo = function(request, response){
-    
-    var time = request.params.minTime;
-    var category = request.params.Category;
-    var tag = request.params.Tags;
-    
-};
-
-//time filter
-// var newArray = activites.filter(function(selectTime){
-//     for (var i =0; i < Object.keys(activities.activites[i]).length; i++){
-//         if (activities.activites[i].minTime <= selectTime){
-
-//         }
-//     }
-    
-//});
-
-//category filter
-function filterByCategory(selectCategory){
-    if (selectPool1 != null && selectTime >= time){
-        selectPool1
-    }
+function filterByTime(time) {
+  const results = activities.activites.filter(
+    element => element.minTime <= time
+  );
+  return results;
 }
-
-//tag filter
-function filterByTag(selectTag){
-    if (selectPool1 != null && selectTime >= time){
-        selectPool1
-    }
-}
-
-  
-// function callBack(){
-
-// }
-//   activities
-// function(){
-//     $(".filter_button").click(function(){
-//          do the function here
-// 	});
-// }
-
-
 
 
 /*
-var old_favorite = JSON.parse($localStorage.get('favorites'));
-localStorage()
+function filterByCategory(category) {
 
-.filter('favoriteFilter', ['$localStorage', function (localStorage) {
+    const results = activities.activites.filter(
+        element2 => element2.Category == "a"
+        "Exercise"
+      );
+    for (var i = 0; i < category.length; i++){
+        if (category[i] == 
+    }
+    
+    
+    return results;
+  }*/
 
-        if(localStorage.getItem('favorites')!=undefined)
-        {
-            var out = [];
-            return out;
-        }
-        else
-        {
-            return function (dishes) {
-                var old_favorite = JSON.parse($localStorage.get('favorites'));
-                var leng = Object.keys(old_favorite).length;
-                console.log(leng);
+exports.view = function(request, response) {
+  if (request.query["time"]) {
+    results = { activites: filterByTime(request.query["time"]) };
+  } else {
+    results = activities;
+  }
 
-                var out = [];
-                for (var i = 0; i < leng; i++) {
-                    for (var j = 0; j < dishes.length; j++) {
-                        if (dishes[j].id === favorites[i].id)
-                            out.push(dishes[j]);
-                    }
-                }
-                return out;
-            }
-        };
-}]);*/
+  const randomElement = activities[Math.floor(Math.random()* activities.length)];
+  response.render("filtered", randomElement);
+
+};

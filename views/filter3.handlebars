@@ -73,11 +73,11 @@
             </svg>
             </a>
 			
-			<!--<a href="/activity"> </a>-->
+			<a href="/activity"> 
 				<div class = "btn btn-primary filter_button">
 					Let's do it!
 				</div>
-			
+			</a>
 			</div>
 		</div>
 	</div>
@@ -134,3 +134,16 @@
 		});
 	}
 </script>
+
+<!--
+<script>
+	$(".filter_button").click(function(){
+	window.location.href = '/filtered?time='+localStorage.getItem("currentId");
+	//window.location.href = '/filtered?time=category='+ JSON.parse(localStorage.getItem("selectedCategory"));
+	//window.location.href = '/filtered?time=category=tag='+ localStorage.getItem("currentSelect");
+
+	//console.log(localStorage.getItem("currentId"));
+	//console.log(localStorage.getItem("selectedCategory"));
+	//console.log(localStorage.getItem("currentSelect"));
+	});
+</script>-->
