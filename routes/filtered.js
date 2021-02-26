@@ -1,52 +1,60 @@
 
 /*
- * Search in database based on filter function.
- first filter:
- 1- <= 10
- 2 - <= 20
- 3 - <= 30
- 4 - <= 1
- 5 - > 60
- 6 - no pre
- var activity_pool = require('../activities.json');
- */
+ * Filtered activity.
+1 - <=10/ 2 - <=20/ 3 - <=30/ 4 - <=60 / 5 - >60/ 6 - no pre
+2nd
+"a" -Exercise
+"b" -Music
+"c" -Creative
+"d" -Productivity
+"e" -Art
+"f" -Nature
+"g" -Cooking
+"h" -Relaxation
+"i" -Learning
+3st
+in 
+out
+no
+Category
+minTime
+Tags
+*/
 
 
+var activities = require("../activites.json");
 
-exports.view = function(request, response){
-    response.render('filtered')
-  };
-  
-/*
-function(){
-    $(".filter_button").click(function(){
-         do the function here
-	});
+function filterByTime(time) {
+  const results = activities.activites.filter(
+    element => element.minTime <= time
+  );
+  return results;
 }
 
 
-.filter('favoriteFilter', ['$localStorage', function (localStorage) {
+/*
+function filterByCategory(category) {
 
-        if(localStorage.getItem('favorites')!=undefined)
-        {
-            var out = [];
-            return out;
-        }
-        else
-        {
-            return function (dishes) {
-                var old_favorite = JSON.parse($localStorage.get('favorites'));
-                var leng = Object.keys(old_favorite).length;
-                console.log(leng);
+    const results = activities.activites.filter(
+        element2 => element2.Category == "a"
+        "Exercise"
+      );
+    for (var i = 0; i < category.length; i++){
+        if (category[i] == 
+    }
+    
+    
+    return results;
+  }*/
 
-                var out = [];
-                for (var i = 0; i < leng; i++) {
-                    for (var j = 0; j < dishes.length; j++) {
-                        if (dishes[j].id === favorites[i].id)
-                            out.push(dishes[j]);
-                    }
-                }
-                return out;
-            }
-        };
-}]);*/
+exports.view = function(request, response) {
+  if (request.query["time"]) {
+    results = { activites: filterByTime(request.query["time"]) };
+  } else {
+    results = activities;
+  }
+
+  const randomElement = activities[Math.floor(Math.random()* activities.length)];
+  response.render("filtered", randomElement);
+
+};
