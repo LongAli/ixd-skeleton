@@ -209,7 +209,7 @@ body {
 }
 
 .footer {
-	margin-top: 4vh;
+	margin-top: 16px;
 	display: flex;
 	flex-direction: column;
 	/* justify-content: space-between; */
