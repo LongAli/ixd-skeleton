@@ -10,31 +10,22 @@
       "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     {
-      "Category": "exercise",
-      "Activity": "Jump rope",
-      "minTime": 5,
-      "Tags": "both",
-      "Image": "https://source.unsplash.com/7QYd1VxLRbM/1600x900",
-      "Link": "",
-      "Description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-    },
-    {
-      "Category": "relaxation",
-      "Activity": "stretch",
-      "minTime": 5,
-      "Tags": "both",
-      "Image": "https://source.unsplash.com/We6cFKHo8sQ/1600x900",
-      "Link": "https://www.youtube.com/watch?v=pH6KMX0V7d0",
-      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    },
-    {
-      "Category": "productivity",
-      "Activity": "Organizing Closet",
-      "minTime": 20,
+      "Category": "kitchen fun",
+      "Activity": "Bake Cookies",
+      "minTime": 30,
       "Tags": "indoor",
-      "Image": "https://source.unsplash.com/XjR-Y8PKeww/1600x900",
+      "Image": "https://source.unsplash.com/tDoHiqXl9b8/1600x900",
       "Link": "",
       "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
+    {
+      "Category": "nature",
+      "Activity": "Plant A Seed",
+      "minTime": 10,
+      "Tags": "outdoor",
+      "Image": "https://source.unsplash.com/4PG6wLlVag4/1600x900",
+      "Link": "",
+      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    }
   ]
 }

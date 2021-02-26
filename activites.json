@@ -506,7 +506,7 @@
     },
     {
       "Category": "kitchen fun",
-      "Activity": "bake cookies",
+      "Activity": "Bake Cookies",
       "minTime": 30,
       "Tags": "indoor",
       "Image": "https://source.unsplash.com/tDoHiqXl9b8/1600x900",
@@ -533,7 +533,7 @@
     },
     {
       "Category": "productivity",
-      "Activity": "Organizing Closet",
+      "Activity": "organize your closet",
       "minTime": 20,
       "Tags": "indoor",
       "Image": "https://source.unsplash.com/XjR-Y8PKeww/1600x900",
