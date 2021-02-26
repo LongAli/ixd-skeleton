@@ -51,8 +51,8 @@
     <div class="row">
         <div class="col-sm">
             
-            {{!-- <button id="camera-button" class="btn btn-primary btn-block" type="button">Share</button> --}}
-            <p><button>Share</button></p>
+            <button id="camera-button" class="btn btn-primary btn-block" type="button">Share</button>
+            
             <p class="result"></p>
             {{!-- <div id="camera" class="profile" style="max-width: 250px;">
                 <video autoplay id="camera-video"></video>
@@ -75,17 +75,15 @@
                 url: 'https://a6-lacuna.herokuapp.com/'
             };
 
-            const btn = document.querySelector('button');
+            const btn = document.getElementById('camera-button');
             const resultPara = document.querySelector('.result');
 
+           
+
+
            btn.addEventListener('click', () => {
-                navigator.share(shareData)
-                    .then(() =>
-                        resultPara.textContent = 'shared successfully'
-                    )
-                    .catch((e) =>
-                        resultPara.textContent = 'Error: ' + e
-                    )
+                navigator.share({ title: document.title, text: window.location.href, url: window.location.href }).then(() => console.log('Successful share'),
+                   error => console.log('Error sharing:', error));
             });
 
     </script>
