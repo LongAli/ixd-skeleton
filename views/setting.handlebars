@@ -26,7 +26,9 @@
 <body>
 	<header class="jumbotron">
 		<div class="container header-display">
+			
 			<h1 class="fixed-top name">Setting</h1>
+			
 			<div class="w-80 top-button fixed-top">
 				<div class="btn-group">
 					<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
@@ -43,7 +45,7 @@
 						<a href="/setting"> <button class="dropdown-item" type="button">Setting</button></a>
 						<a href="/about"> <button class="dropdown-item" type="button">About</button></a>
 						<a href="/logIn"> <button class="dropdown-item" type="button"
-								style="background-color: grey; color: white;">Log in</button></a>
+								style="background-color: grey; color: white;">Log Out</button></a>
 					</div>
 				</div>
 			</div>
@@ -70,7 +72,7 @@
 						<option value="3">Monthly</option>
 					</select>
 					<div class="input-group-append">
-						<button class="btn btn-outline-secondary" type="button">Save</button>
+						<button class="btn btn-outline-secondary" type="button" id="save-time">Save</button>
 					</div>
 				</div>
 			</div>
@@ -84,7 +86,7 @@
 						<option value="3">Evening</option>
 					</select>
 					<div class="input-group-append">
-						<button class="btn btn-outline-secondary" type="button">Save</button>
+						<button class="btn btn-outline-secondary" type="button" id="save-when">Save</button>
 					</div>
 				</div>
 			</div>
@@ -92,14 +94,32 @@
 
 		<div class="row">
 			<div class="col-sm footer">
-				<button type="button" class="btn btn-primary btn">Delete Account</button>
-				<button type="button" class="btn btn-outline-primary btn-spacing">Manage Account</button>
+				<button type="button" class="btn btn-primary btn" id="del">Delete Account</button>
+				<button type="button" class="btn btn-outline-primary btn-spacing" id="manage">Manage Account</button>
 			</div>
 		</div>
 
 	</div>
 
 	{{!-- js --}}
+	<script>
+		const manageBtn = document.getElementById('manage');
+		const delBtn = document.getElementById('del');
+		const saveBtn1 = document.getElementById('save-time');
+		const saveBtn2 = document.getElementById('save-when');
+		manageBtn.addEventListener('click', function (e) {
+				alert('Coming Soon!');
+		});
+		delBtn.addEventListener('click', function (e) {
+				alert('Coming Soon!');
+		});
+		saveBtn1.addEventListener('click', function (e) {
+				alert('Successfully Saved');
+		});
+		saveBtn2.addEventListener('click', function (e) {
+				alert('Successfully Saved');
+		});
+	</script>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
 		crossorigin="anonymous"></script>

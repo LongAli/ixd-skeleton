@@ -22,12 +22,14 @@
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
 	<script src="/js/introHCI.js"></script>
-	{{> facebook}}
+	{{!-- {{> facebook}}
 	<script src="/js/facebook.js"></script>
+	<script src="/js/loadStuff.js"></script> --}}
 
 </head>
 
 <body>
+
 	<div class="container">
 		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
 		<!-- p means paragraph -->
@@ -49,7 +51,7 @@
 						<a href="/index"> <button class="dropdown-item active" type="button">Home</button> </a>
                             <a href="/setting"> <button class="dropdown-item" type="button">Setting</button></a>
 							<a href="/about"> <button class="dropdown-item" type="button">About</button></a>
-							<a href="/logIn"> <button class="dropdown-item" type="button" style="background-color: grey; color: white;">Log in</button></a>
+							<a href="/logIn"> <button class="dropdown-item" type="button" style="background-color: grey; color: white;">Log Out</button></a>
 						</div>
 					</div>
 			</div>
@@ -71,16 +73,21 @@
 		<!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
 		<!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
 		<br><br><br><br><br><br><br><br>
+
 		{{#each toLog}}
-		<div class="card w-80">
-			<div class="card-body">
+		<div class="card w-80" id="card">
+			<div class="card-body" >
 				<div class="card-iteminline">
 
 					<h2 class="card-title">{{Activity}}</h2>
-					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
-
-						<path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
-					</svg>
+					<div id="share-link">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-share"
+							viewBox="0 0 16 16">
+						
+							<path
+								d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+						</svg>
+					</div>
 				</div>
 				<h3 class="card-subtitle mb-2 text-muted" >{{minTime}} minutes</h3>
 			</div>
@@ -91,7 +98,7 @@
 				</div>
 				<br>
 				<div class="card-iteminline">
-					<a href="#" class="card-link">Delete</a>
+					<a href="#" class="card-link" id="delete">Delete</a>
 					<a href="/activity" class="btn btn-primary">DO IT AGAIN</a> 
 				</div>
 					
@@ -108,11 +115,22 @@
 			</div>
 		</a>
 		
-			
-
-
 	</div>
-	
+
+	<script>
+		var button = document.querySelector("#delete");
+		var ele = document.querySelector("#card");
+		button.addEventListener('click', function() {
+			ele.parentNode.removeChild(ele);
+		})
+
+		const sharebtn = document.getElementById('share-link');
+		sharebtn.addEventListener('click', function (e) {
+			
+			alert('Coming Soon!');
+		});
+
+	</script>
 
 </body>
 </html>

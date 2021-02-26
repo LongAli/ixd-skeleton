@@ -16,23 +16,23 @@
 			<path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
 		</svg>
 	</a>
-
+	{{#each toLog}}
 	<div class="container">
 		<div class="row">
-			<div class="col-12 col-sm content">
-				<h1 class="title">Yoga!</h1>
+			<div class="col-sm content">
+				<h3 class="title">{{Activity}}</h3>
 				<div class="video">
-					<iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+					<iframe width="420" height="350" src="{{Link}}">
 					</iframe>
 				</div>
-				<p class="description">Ten minute of sun salutations with Instructor Nina.</p>
+				<p class="description">{{Description}}</p>
 				<h3 id="timer">0:00</h3>
 			</div>
 			
 		</div>
-		
+		{{/each}}
 		<div class="row">
-			<div class="col-12 col-sm">
+			<div class="col-sm">
 				<div class="buttons">
 					<button id="secondary">
 						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-repeat"
@@ -55,6 +55,12 @@
 	</div>
 	
 	{{!-- js --}}
+	<script>
+		const tryBtn = document.getElementById('secondary');
+		tryBtn.addEventListener('click', function (e) {
+			alert('Coming Soon!');
+		});
+	</script>
 	<script src="/js/timer.js"></script>
 	{{!-- <script src="/js/bootstrap.min.js"></script> --}}
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
