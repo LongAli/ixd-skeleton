@@ -87,9 +87,17 @@
 </html>
 
 
+<script>
+	$(".filter_button").click(function(){
+		console.log(localStorage.getItem("currentId"));
+		console.log(localStorage.getItem("currentSelect"));
+		console.log(localStorage.getItem("selectedCategory"));
+	});
+</script>
 
 
 <script>
+	
 	$(".multiple-unselect").click(function(){
 		var currentSelect = $(this).attr("id");
 		var currentBg = $(this).css("background-color");
@@ -125,5 +133,17 @@
 			}
 		});
 	}
-
 </script>
+
+<!--
+<script>
+	$(".filter_button").click(function(){
+	window.location.href = '/filtered?time='+localStorage.getItem("currentId");
+	//window.location.href = '/filtered?time=category='+ JSON.parse(localStorage.getItem("selectedCategory"));
+	//window.location.href = '/filtered?time=category=tag='+ localStorage.getItem("currentSelect");
+
+	//console.log(localStorage.getItem("currentId"));
+	//console.log(localStorage.getItem("selectedCategory"));
+	//console.log(localStorage.getItem("currentSelect"));
+	});
+</script>-->
