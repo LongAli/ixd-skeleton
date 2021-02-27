@@ -75,7 +75,7 @@
 		<br><br><br><br><br><br><br><br>
 
 		{{#each toLog}}
-		<div class="card w-80" id="card">
+		<div class="card w-80 card-spacing" id="card">
 			<div class="card-body" >
 				<div class="card-iteminline">
 
@@ -99,12 +99,14 @@
 				<br>
 				<div class="card-iteminline">
 					<a href="#" class="card-link" id="delete">Delete</a>
-					<a href="/activity" class="btn btn-primary">DO IT AGAIN</a> 
+					<a href="/activity/{{ID}}" class="btn btn-primary again">DO IT AGAIN</a> 
 				</div>
 					
 			</div>
 		</div>
 		{{/each}}
+
+		<br><br><br><br><br><br><br><br>
 
 		<!--button nav-->
 		<a href="/filter">

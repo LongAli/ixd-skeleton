@@ -167,7 +167,7 @@ body {
 .select-all {
 	padding: 10px 20px;
 	margin: 10px 0px;
-	<<<<<<<: inline-block;
+	display: inline-block;
 	align-items: flex-start;
 	position: relative;
 

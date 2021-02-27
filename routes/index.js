@@ -2,12 +2,9 @@
  * GET home page.
  */
 
-var data = require ('../actLog.json');
+var data = require('../actLog.json');
 
-exports.view = function(request, response){
-  console.log(data);
-  response.render('index', data);
-
+exports.view = function(request, response) {
+	//console.log(data);
+	response.render('index', data);
 };
-
-
