@@ -7,7 +7,30 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/introHCI.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
     <title>Completion Screen</title>
+    {{!-- FB js  --}}
+    <script>
+        window.fbAsyncInit = function () {
+                FB.init({
+                    appId: '2570729263220103', status: true, cookie: true, xfbml: true
+                });
+            };
+            (function (d, debug) {
+                var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+                if (d.getElementById(id)) { return; }
+                js = d.createElement('script'); js.id = id;
+                js.async = true; js.src = "//connect.facebook.net/en_US/all" + (debug ? "/debug" : "") + ".js";
+                ref.parentNode.insertBefore(js, ref);
+            }(document, /*debug*/ false));
+            function postToFeed(title, desc, url, image) {
+                var obj = { method: 'feed', link: url, picture: 'http://www.url.com/images/' + image, name: title, description: desc };
+                function callback(response) { }
+                FB.ui(obj, callback);
+            }
+    </script>
+    
 </head>
 <body>
     <header class="jumbotron">
@@ -48,18 +71,22 @@
             <h3>Yay! You completed your first activity</h3>
         </div>
     </div>
+    
     <div class="row">
-        <div class="col-sm">
+        {{!-- <div class="col-sm">
             
             <button id="camera-button" class="btn btn-primary btn-block" type="button">Share</button>
-            
-            <p class="result"></p>
-            {{!-- <div id="camera" class="profile" style="max-width: 250px;">
-                <video autoplay id="camera-video"></video>
-                <button id="camera-button" class="btn btn-primary">Take Photo</button>
-            </div> --}}
 
+        </div> --}}
+        <div class="col-sm">
+            
+            
+            <!-- Your share button code -->
+            <button class="btn btn-primary btn-block btnShare" href="https://a6-lacuna.herokuapp.com/" data-title="Lacuna">Share
+            </button>
+            
         </div>
+        
         <div class="col-sm footer content-spacing">
             <a href="/index">
                 <button type="button" class="btn btn-outline-primary btn-block btn-spacing" id="back-home">Back to home</button>
@@ -69,27 +96,22 @@
     {{!-- js --}}
     
     <script>
+        $('.btnShare').click(function () {
+                elem = $(this);
+                postToFeed(elem.data('title'), elem.data('desc'), elem.prop('href'), elem.data('image'));
+
+                return false;
+            });
+
         let shareData = {
                 title: 'share',
                 text: 'share event',
                 url: 'https://a6-lacuna.herokuapp.com/'
             };
 
-        const btn = document.getElementById('camera-button');
+        // const btn = document.getElementById('camera-button');
         const resultPara = document.querySelector('.result');
         const backHome = document.getElementById("back-home");
-
-        btn.addEventListener('click', () => {
-            navigator.share({ title: 'title', text: 'thanks', url: window.location.href }).then(() => console.log('Successful share'),
-                error => console.log('Error sharing:', error));
-        });
-
-        btn.addEventListener('click', comingSoon)
-
-        function comingSoon(e) {
-            alert('Coming Soon!');
-        }
-
 
     </script>
     
