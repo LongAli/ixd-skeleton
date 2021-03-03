@@ -50,10 +50,7 @@ body {
 .name {
 	margin-top: 1rem;
 	margin-left: 1rem;
-	<<<<<<<: #657dc4 !important;
-	font-family: ;
-	=======: #212529 !important;
-	font-family: >>>>>>> 16e7ced543a86fc96f9ac44d4b93123f62594bcf;
+	color: #212529 !important;
 }
 
 .arrow {
@@ -119,8 +116,11 @@ body {
 }
 
 /*things for the card on home page*/
-.card {
-	margin-bottom: 10%;
+#card {
+	margin-bottom: 6%;
+	border: 1px solid rgba(131,142,217);
+	border-radius: 2%;
+
 }
 
 .card-link {

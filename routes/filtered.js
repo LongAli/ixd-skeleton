@@ -14,59 +14,55 @@ var activities = require('../activites.json');
 // const tryAgainBtn = document.querySelector('.tryAgain');
 
 // tryAgainBtn.addEventListener('click', randomize);
+var currentIndex = 0;
 
 function filterByTime(time) {
 	const results = activities.activites.filter((element) => element.minTime <= time);
 	return results;
 }
 
+function randomize(ele) {
+    const seed = Math.floor(Math.random() * 10 * Object.keys(ele).length);
+    currentIndex = seed;
+    //console.log(seed);
+    //console.log("currentIndex");
+    const randomElement = ele.activites[parseInt(seed)];
+    return randomElement;
+}
+
 exports.view = function(request, response) {
-	if (request.query['time']) {
+ 	if (request.query['time']) {
 		results = { activites: filterByTime(request.query['time']) };
 	} else {
 		results = activities;
-	}
+    }
+    
+    console.log(results);
 
-	const e = randomize(results);
-	response.render('filtered', e);
-};
-
-function randomize(ele) {
-	const seed = Math.floor(Math.random() * 10 * Object.keys(ele).length);
-	const randomElement = ele.activites[parseInt(seed)];
-	//console.log(randomElement);
-	return randomElement;
-}
-/*
-function(){
-    $(".filter_button").click(function(){
-         do the function here
-	});
-}
+    const e = randomize(results);
+    // console.log("haha");
+    response.render('filtered', e);
 
 
-.filter('favoriteFilter', ['$localStorage', function (localStorage) {
+    //get the index of the current selected (e) activity from resutls
 
-        if(localStorage.getItem('favorites')!=undefined)
-        {
-            var out = [];
-            return out;
-        }
-        else
-        {
-            return function (dishes) {
-                var old_favorite = JSON.parse($localStorage.get('favorites'));
-                var leng = Object.keys(old_favorite).length;
-                console.log(leng);
+    //avoid that index
 
-                var out = [];
-                for (var i = 0; i < leng; i++) {
-                    for (var j = 0; j < dishes.length; j++) {
-                        if (dishes[j].id === favorites[i].id)
-                            out.push(dishes[j]);
-                    }
-                }
-                return out;
-            }
-        };
-}]);*/
+    //randomize on the rest of activities from results
+
+    // if (request.query['id']) {
+	// 	results = { activites: filterByTime(request.query['time']) };
+	// } else {
+	// 	results = activities;
+	// }
+
+
+//      $(".tryAgain").click(function(){
+//          var currentAcId = $(this).attr("id");
+//         console.log(currentAcId);
+//     });
+ };
+
+
+
+
