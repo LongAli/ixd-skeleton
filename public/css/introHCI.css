@@ -116,7 +116,7 @@ body {
 }
 
 /*things for the card on home page*/
-#card {
+.card {
 	margin-bottom: 6%;
 	border: 1px solid rgba(131,142,217);
 	border-radius: 2%;
@@ -133,6 +133,10 @@ body {
 	/*top part of the card*/
 	display: flex;
 	justify-content: space-between;
+}
+
+.deleteclass{
+	display:none;
 }
 
 /*for filter only*/

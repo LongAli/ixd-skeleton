@@ -1,25 +1,24 @@
 'use strict';
 
 // Call this function when the page loads (the "ready" event)
-$(document).ready(function() {
-	initializePage();
-});
+// $(document).ready(function() {
+// 	initializePage();
+// });
 
 /*
  * Function that is called when the document is ready.
  */
-function initializePage() {
-	$('.card-link').click(deleteClick);
-	// $('#colorBtn').click(randomizeColors);
-}
-function deleteClick(e) {
-	//console.log(data);
-	e.preventDefault();
-	console.log('The Delete Functionality has not been implemented yet :)');
-	//var toDel = data.toLog.unshift(this);
-	//data.toLog.splice(toDel,1);
-	//data.toLog.unshift("HI");
-}
+// function initializePage() {
+// 	$('.card-link').click(deleteClick);
+// 	// $('#colorBtn').click(randomizeColors);
+// }
+// function deleteClick(e) {
+// 	e.preventDefault();
+// 	console.log('The Delete Functionality has not been implemented yet :)');
+// 	var toDel = data.toLog.unshift(this);
+// 	data.toLog.splice(toDel,1);
+// 	//data.toLog.unshift("HI");
+// }
 /*
  * Make an AJAX call to retrieve project details and add it in
  */

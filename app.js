@@ -19,6 +19,7 @@ var complete = require('./routes/complete');
 var logIn = require('./routes/logIn');
 var logIn = require('./routes/logIn');
 var filtered = require('./routes/filtered');
+var save = require('./routes/save');
 // Example route
 // var user = require('./routes/user');
 
@@ -58,6 +59,7 @@ app.get('/logIn', logIn.view);
 app.get('/complete', complete.view);
 app.get('/index', index.view);
 app.get('/activity/:id', activity.activityInfo);
+app.get('/save', save.saveActivity);
 
 http.createServer(app).listen(app.get('port'), function() {
 	console.log('Express server listening on port ' + app.get('port'));

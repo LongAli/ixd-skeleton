@@ -14,7 +14,6 @@ var activities = require('../activites.json');
 // const tryAgainBtn = document.querySelector('.tryAgain');
 
 // tryAgainBtn.addEventListener('click', randomize);
-var currentIndex = 0;
 
 function filterByTime(time) {
 	const results = activities.activites.filter((element) => element.minTime <= time);
@@ -23,9 +22,7 @@ function filterByTime(time) {
 
 function randomize(ele) {
     const seed = Math.floor(Math.random() * 10 * Object.keys(ele).length);
-    currentIndex = seed;
     //console.log(seed);
-    //console.log("currentIndex");
     const randomElement = ele.activites[parseInt(seed)];
     return randomElement;
 }
@@ -37,7 +34,7 @@ exports.view = function(request, response) {
 		results = activities;
     }
     
-    console.log(results);
+    //console.log(results);
 
     const e = randomize(results);
     // console.log("haha");
