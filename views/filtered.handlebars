@@ -54,12 +54,12 @@
 			<div class="col-12 col-sm">
 				<div class="buttons">
 					<button id="primary">Start</button>
-					 {{!-- <a href="/complete">  --}}
-						<div class="complete" id ={{ID}}>
+					  {{!-- <a href="/complete">  --}}
+						<button class="complete" id ={{ID}}>
 							<div class="btn btn-outline-primary btn-block">
 								Complete
-						</div>
-					{{!-- </a> --}}
+						</button>
+					{{!-- </a>  --}}
 					<button class="tryAgain">
 						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
 							<path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z" />
@@ -95,15 +95,17 @@
 	});
 	$(".complete").click(function(){
 		//get the index of the current activty
+		
 		var completedID = this.id;
 		localStorage.setItem("completedID", completedID);	
-		window.location.href = '/filtered?time='+localStorage.getItem("currentId")+ '&' +'activity_index='+localStorage.getItem("completedID");
+		window.location.href = '/save?activity_index='+localStorage.getItem("completedID");
 
 		//$('#' + completedID)
 		//$( "#"+deleteID+'.card').hide();
 
 		//window.location.href = '/save?id='+localStorage.getItem("index");
 	});
+
 
 </script>
 
