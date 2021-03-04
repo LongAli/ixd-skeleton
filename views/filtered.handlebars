@@ -42,11 +42,9 @@
 					<iframe width="420" height="315" src={{Link}}>
 					</iframe>
 				</div> --}}
-				
-				<img class="card-img-top" src="{{Image}}" alt="Unsplash image">
-				
+				<img class="card-img-top" src={{Image}} alt="Unsplash image">
 				<h1 class="title">{{Activity}}</h1>
-				<h4 class="description">{{Description}}Ten minute of sun salutations with Instructor Nina.</h4>
+				<h4 class="description">{{Description}}</h4>
 				<h3 id="timer">{{minTime}} min</h3>
 			</div>
 
@@ -56,11 +54,11 @@
 			<div class="col-12 col-sm">
 				<div class="buttons">
 					<button id="primary">Start</button>
-					{{!-- <a href="/complete"> --}}
-					<button class="complete">
-						<div class="btn btn-outline-primary btn-block">
-							Complete
-					</button>
+					 {{!-- <a href="/complete">  --}}
+						<div class="complete" id ={{ID}}>
+							<div class="btn btn-outline-primary btn-block">
+								Complete
+						</div>
 					{{!-- </a> --}}
 					<button class="tryAgain">
 						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
@@ -91,31 +89,19 @@
 </html>
 
 
-{{!-- <script type="../route" src="filtered.js">
-    $(".tryAgain").click(function(){
-        var currentAcId = $(this).attr("id");
-        console.log(currentAcId);
-		if (request.query['time']) {
-		results = { activites: filterByTime(request.query['time']) };
-		} else {
-		results = activities;
-		}
-    console.log("haha");
-		const e = randomize(results);
-
-		response.render('filtered', e);
-	});
-</script> --}}
-
 <script>
 	$(".tryAgain").click(function(){
 		window.location.href = '/filtered?time='+localStorage.getItem("currentId");
 	});
-	//$(".complete").click(function(){
+	$(".complete").click(function(){
+		var completedID = this.id;
+		console.log(completedID);
 		//get the index of the current activty
+		//$('#' + completedID)
+		//$( "#"+deleteID+'.card').hide();
 		//var index = localStorage.getItem("currentSelect");
 		//window.location.href = '/save?id='+localStorage.getItem("index");
-	//});
+	});
 
 </script>
 

@@ -74,9 +74,11 @@
 		<!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
 		<!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
 		<br><br><br><br><br><br><br><br>
-
+	
+	<form id="addFriendForm" role="form" method="get" action="/add"></form>
+	
 		{{#each toLog}}
-		<div class="card w-80 card-spacing" id="card">
+		<div class="card w-80 card-spacing" id={{ID}}>
 			<div class="card-body">
 				<div class="card-iteminline">
 
@@ -99,15 +101,17 @@
 				</div>
 				<br>
 				<div class="card-iteminline">
+					<button type="button" data-toggle="modal" data-target="#myModal">
+						 <a href="#" class="card-link delete" id={{ID}}>
+							 Delete
+						</a>
+						</button>
 
 					<!--REDO MODAL-->
-						<div class="container">
-						 
+					<div class="container">
+
 						 <!-- Trigger the modal with a button -->
 						 <!-- Button to Open the Modal -->
-						<button type="button" data-toggle="modal" data-target="#myModal">
-						 <a href="#" class="card-link delete" id={{ID}}>Delete</a>
-						</button>
 
 						<!-- The Modal -->
 						<div class="modal" id="myModal">
@@ -133,7 +137,7 @@
 						    </div>
 						  </div>
 						</div>
-						</div>
+					</div>
 
 					<!--ENDmodal for delete-->
 
@@ -156,20 +160,57 @@
 					</div>
 			</div>
 		</a>
-		
+		</form>
 	</div>
 
 <script>
 	$(".delete").click(function(){
-		var currentID = $(this).attr("ID");
-		console.log(currentID);
-		var ele = document.querySelector("#card");
-		console.log(ele);
-		$("#card").addClass('deleteclass');
-		//var ele = document.querySelector("#card");
-		//$(this).hide();
-		//ele.parentNode.removeChild(ele);
+		var deleteID = $(this).attr("ID");
+		var activityID = $(".card").attr("ID");
+
+
+		console.log(deleteID);
+		console.log(activityID);
+		//var deleteID = Document.getElementById('.card');
+		var newClass = document.querySelector(".card");
+		if (deleteID === activityID){
+			$( "#"+deleteID+'.card').hide();
+		}
 	})
+		//var deleted_array = JSON.parse(localStorage.getItem(deleted)); 
+		//deleted_array.push(deleteID);
+		//localStorage.set(deleted,deleted_array)
+	
+		//if (deleteID == activityID){
+			//$("#foo.bar")
+			//$('deleteID').addClass("deleteclass");
+			
+			//console.log(newClass);
+			
+			//if(element.parentNode) {
+			//	ele.parentNode.removeChild(ele);
+			
+			
+			//element.parentNode.removeChild(element);
+		//}
+				//console.log(ele);
+	
+	
+		//console.log(currentID);
+
+
+		//if (ele.parentNode) {
+		//	$(".card").addClass('currentID');
+			//var currentID = $(this).attr("ID");
+				
+		//}
+
+		//console.log(ele);
+		//var ele = document.querySelector("#card");
+		//
+		//
+		//
+
 	//var button = document.querySelector("#delete");
 	//var ele = document.querySelector("#card");
 	//button.addEventListener('click', deleteClick(e) {
