@@ -43,7 +43,7 @@
 					</iframe>
 				</div> --}}
 				<img class="card-img-top" src={{Image}} alt="Unsplash image">
-				<h1 class="title">{{Activity}}</h1>
+				<h1 class="title" >{{Activity}}</h1>
 				<h4 class="description">{{Description}}</h4>
 				<h3 id="timer">{{minTime}} min</h3>
 			</div>
@@ -94,12 +94,14 @@
 		window.location.href = '/filtered?time='+localStorage.getItem("currentId");
 	});
 	$(".complete").click(function(){
-		var completedID = this.id;
-		console.log(completedID);
 		//get the index of the current activty
+		var completedID = this.id;
+		localStorage.setItem("completedID", completedID);	
+		window.location.href = '/filtered?time='+localStorage.getItem("currentId")+ '&' +'activity_index='+localStorage.getItem("completedID");
+
 		//$('#' + completedID)
 		//$( "#"+deleteID+'.card').hide();
-		//var index = localStorage.getItem("currentSelect");
+
 		//window.location.href = '/save?id='+localStorage.getItem("index");
 	});
 

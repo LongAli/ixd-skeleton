@@ -37,6 +37,7 @@ exports.view = function(request, response) {
 		results = activities;
     }
     
+    
     //console.log(results);
 
     const e = randomize(results);
