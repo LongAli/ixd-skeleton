@@ -29,6 +29,7 @@
 
 </head>
 
+
 <body>
 
 	<div class="container">
@@ -109,7 +110,7 @@
 						 <!-- Trigger the modal with a button -->
 						 <!-- Button to Open the Modal -->
 						<button type="button" data-toggle="modal" data-target="#myModal">
-						 <a href="#" class="card-link" id="delete">Delete</a>
+						 <a href="#" class="card-link delete" id={{ID}}>Delete</a>
 						</button>
 
 						<!-- The Modal -->
@@ -153,27 +154,38 @@
 		<a href="/filter">
 			<div class="fixed-bottom">
 					<div class="home-bottom">
-						<button type="button" class="btn-primary w-75 primarybtn">Get new idea!</button>
+						<button type="button" class="btn-primary w-75 primarybtn">
+							Get new idea!
+						</button>
 					</div>
 			</div>
 		</a>
 		
 	</div>
 
-	<script>
-		var button = document.querySelector("#modal-delete");
+<script>
+	$(".delete").click(function(){
+		var currentID = $(this).attr("ID");
+		console.log(currentID);
 		var ele = document.querySelector("#card");
-		button.addEventListener('click', function() {
-			ele.parentNode.removeChild(ele);
-		})
+		console.log(ele);
+		$("#card").addClass('deleteclass');
+		//var ele = document.querySelector("#card");
+		//$(this).hide();
+		//ele.parentNode.removeChild(ele);
+	})
+	//var button = document.querySelector("#delete");
+	//var ele = document.querySelector("#card");
+	//button.addEventListener('click', deleteClick(e) {
+	//	ele.parentNode.removeChild(ele);
+	//});
+	
 
-		const sharebtn = document.getElementById('share-link');
-		sharebtn.addEventListener('click', function (e) {
-			
-			alert('Coming Soon!');
-		});
-
-	</script>
-
+	const sharebtn = document.getElementById('share-link');
+	sharebtn.addEventListener('click', function (e) {
+		alert('Coming Soon!');
+	});
+</script>
 </body>
 </html>
+

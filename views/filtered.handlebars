@@ -111,10 +111,11 @@
 	$(".tryAgain").click(function(){
 		window.location.href = '/filtered?time='+localStorage.getItem("currentId");
 	});
-	$(".complete").click(function(){
-		var selectId = localStorage.getItem("currentSelect");
-		window.location.href = '/filtered?time='+localStorage.getItem("currentId");
-	});
+	//$(".complete").click(function(){
+		//get the index of the current activty
+		//var index = localStorage.getItem("currentSelect");
+		//window.location.href = '/save?id='+localStorage.getItem("index");
+	//});
 
 </script>
 
