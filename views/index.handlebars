@@ -22,6 +22,7 @@
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
 	<script src="/js/introHCI.js"></script>
+	<script src="/js/facebook.js"></script>
 	{{!-- {{> facebook}}
 	<script src="/js/facebook.js"></script>
 	<script src="/js/loadStuff.js"></script> --}}
@@ -56,6 +57,9 @@
 					</div>
 			</div>
 		</div>
+		{{!-- <p class="facebookLogin">Please login through Facebook</p>
+		<fb:login-button id="fb_button" scope="public_profile,email" onlogin="checkLoginState();">
+		</fb:login-button> --}}
 		
 		<!-- log in w/facebook
 			<p class="facebookLogin">Please login through Facebook</p>
@@ -126,7 +130,7 @@
 
 						      <!-- Modal footer -->
 						      <div class="modal-footer">
-						        <button type="button" class="btn btn-danger" data-dismiss="modal">Delete</button>
+						        <button type="button" class="btn btn-danger" data-dismiss="modal" id="modal-delete">Delete</button>
 						      </div>
 
 						    </div>
@@ -157,7 +161,7 @@
 	</div>
 
 	<script>
-		var button = document.querySelector("#delete");
+		var button = document.querySelector("#modal-delete");
 		var ele = document.querySelector("#card");
 		button.addEventListener('click', function() {
 			ele.parentNode.removeChild(ele);

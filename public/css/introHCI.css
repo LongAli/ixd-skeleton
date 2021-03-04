@@ -261,3 +261,10 @@ a:visited {
 .container {
 	overflow: hidden;
 }
+
+.fb-login {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
