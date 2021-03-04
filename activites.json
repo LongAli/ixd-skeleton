@@ -1,6 +1,7 @@
 {
   "activites": [
     {
+      "ID": 1,
       "Category": "exercise",
       "Activity": "Yoga",
       "minTime": 30,
@@ -10,6 +11,7 @@
       "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     {
+      "ID": 2,
       "Category": "exercise",
       "Activity": "Yoga",
       "minTime": 30,
@@ -19,6 +21,7 @@
       "Description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     {
+      "ID": 3,
       "Category": "exercise",
       "Activity": "Yoga",
       "minTime": 40,
@@ -28,6 +31,7 @@
       "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     {
+      "ID": 4,
       "Category": "exercise",
       "Activity": "Yoga",
       "minTime": 60,
@@ -37,6 +41,7 @@
       "Description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     {
+      "ID": 5,
       "Category": "exercise",
       "Activity": "Yoga",
       "minTime": 10,
@@ -46,6 +51,7 @@
       "Description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
+      "ID": 6,
       "Category": "exercise",
       "Activity": "Yoga",
       "minTime": 15,
@@ -55,6 +61,7 @@
       "Description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     {
+      "ID": 7,
       "Category": "exercise",
       "Activity": "Biking",
       "minTime": 20,
@@ -64,6 +71,7 @@
       "Description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
+      "ID": 8,
       "Category": "exercise",
       "Activity": "Jump rope",
       "minTime": 5,
@@ -73,6 +81,7 @@
       "Description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     {
+      "ID": 9,
       "Category": "exercise",
       "Activity": "hula hoop",
       "minTime": 5,
@@ -82,6 +91,7 @@
       "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     {
+      "ID": 10,
       "Category": "exercise",
       "Activity": "going for a walk",
       "minTime": 10,
@@ -91,6 +101,7 @@
       "Description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
+      "ID": 11,
       "Category": "exercise",
       "Activity": "going for a run",
       "minTime": 10,
@@ -100,6 +111,7 @@
       "Description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     {
+      "ID": 12,
       "Category": "music",
       "Activity": "make a spotify playlist",
       "minTime": 10,
@@ -109,6 +121,7 @@
       "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     {
+      "ID": 13,
       "Category": "music",
       "Activity": "learn a new piece of music with the intrument you play",
       "minTime": 20,
@@ -118,6 +131,7 @@
       "Description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
+      "ID": 14,
       "Category": "music",
       "Activity": "listen to an album from an artist you've never heard of",
       "minTime": 20,
@@ -127,6 +141,7 @@
       "Description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     {
+      "ID": 15,
       "Category": "music",
       "Activity": "write a song",
       "minTime": 10,
@@ -136,6 +151,7 @@
       "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     {
+      "ID": 16,
       "Category": "music",
       "Activity": "look up your current mood on spotify and listen to that playlist",
       "minTime": 10,
@@ -145,6 +161,7 @@
       "Description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
+      "ID": 17,
       "Category": "creative",
       "Activity": "paint",
       "minTime": 10,
@@ -154,6 +171,7 @@
       "Description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     {
+      "ID": 18,
       "Category": "creative",
       "Activity": "draw",
       "minTime": 10,
@@ -163,6 +181,7 @@
       "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     {
+      "ID": 19,
       "Category": "creative",
       "Activity": "color",
       "minTime": 10,
@@ -172,6 +191,7 @@
       "Description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
+      "ID": 20,
       "Category": "creative",
       "Activity": "craft something for a friend",
       "minTime": 15,
@@ -181,6 +201,7 @@
       "Description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     {
+      "ID": 21,
       "Category": "creative",
       "Activity": "decorate something for your room",
       "minTime": 15,
@@ -190,6 +211,7 @@
       "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     {
+      "ID": 22,
       "Category": "creative",
       "Activity": "sidewalk chalk in your neighborhood or nearby park",
       "minTime": 10,
@@ -199,6 +221,7 @@
       "Description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
+      "ID": 23,
       "Category": "creative",
       "Activity": "take a photograph of yourself and edit it",
       "minTime": 10,
@@ -208,6 +231,7 @@
       "Description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     {
+      "ID": 24,
       "Category": "creative",
       "Activity": "make a graphic",
       "minTime": 10,
@@ -217,6 +241,7 @@
       "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     {
+      "ID": 25,
       "Category": "creative",
       "Activity": "take a photograph of something in your house from a different point of view",
       "minTime": 10,
@@ -226,6 +251,7 @@
       "Description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
+      "ID": 26,
       "Category": "creative",
       "Activity": "do a puzzle",
       "minTime": 20,
@@ -235,6 +261,7 @@
       "Description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     {
+      "ID": 27,
       "Category": "creative",
       "Activity": "start a journal, or continue journalling",
       "minTime": 10,
@@ -244,6 +271,7 @@
       "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     {
+      "ID": 28,
       "Category": "creative",
       "Activity": "write a poem",
       "minTime": 10,
@@ -253,6 +281,7 @@
       "Description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
+      "ID": 29,
       "Category": "creative",
       "Activity": "write a song",
       "minTime": 10,
@@ -262,6 +291,7 @@
       "Description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     {
+      "ID": 30,
       "Category": "creative",
       "Activity": "write a letter to a penpal",
       "minTime": 10,
@@ -271,6 +301,7 @@
       "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     {
+      "ID": 31,
       "Category": "creative",
       "Activity": "upcycle a piece of clothing",
       "minTime": 30,
@@ -280,6 +311,7 @@
       "Description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
+      "ID": 32,
       "Category": "creative",
       "Activity": "design a tattoo",
       "minTime": 10,
@@ -289,6 +321,7 @@
       "Description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     {
+      "ID": 33,
       "Category": "nature",
       "Activity": "Plant A Seed",
       "minTime": 10,
@@ -298,6 +331,7 @@
       "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     {
+      "ID": 34,
       "Category": "nature",
       "Activity": "go on a walk",
       "minTime": 10,
@@ -307,6 +341,7 @@
       "Description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
+      "ID": 35,
       "Category": "nature",
       "Activity": "go on a hike",
       "minTime": 10,
@@ -316,6 +351,7 @@
       "Description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     {
+      "ID": 36,
       "Category": "nature",
       "Activity": "tend to your garden",
       "minTime": 20,
@@ -325,6 +361,7 @@
       "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     {
+      "ID": 37,
       "Category": "nature",
       "Activity": "read about a plant in your garden",
       "minTime": 10,
@@ -334,6 +371,7 @@
       "Description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
+      "ID": 38,
       "Category": "learning",
       "Activity": "read a book that you've been meaning to read",
       "minTime": 40,
@@ -343,6 +381,7 @@
       "Description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     {
+      "ID": 39,
       "Category": "learning",
       "Activity": "read an article about ____",
       "minTime": 30,
@@ -352,6 +391,7 @@
       "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     {
+      "ID": 40,
       "Category": "learning",
       "Activity": "listen to an audiobook",
       "minTime": 30,
@@ -361,6 +401,7 @@
       "Description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
+      "ID": 41,
       "Category": "learning",
       "Activity": "listen to a podcast",
       "minTime": 30,
@@ -370,6 +411,7 @@
       "Description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     {
+      "ID": 42,
       "Category": "learning",
       "Activity": "whats your favorite animal? read an article about them.",
       "minTime": 10,
@@ -379,6 +421,7 @@
       "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     {
+      "ID": 43,
       "Category": "learning",
       "Activity": "read the first news article that pops up when you click the \"News\" tab on Google",
       "minTime": 15,
@@ -388,6 +431,7 @@
       "Description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
+      "ID": 44,
       "Category": "relaxation",
       "Activity": "yoga",
       "minTime": 30,
@@ -397,6 +441,7 @@
       "Description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     {
+      "ID": 45,
       "Category": "relaxation",
       "Activity": "meditate",
       "minTime": 20,
@@ -406,6 +451,7 @@
       "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     {
+      "ID": 46,
       "Category": "relaxation",
       "Activity": "meditate",
       "minTime": 10,
@@ -415,6 +461,7 @@
       "Description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
+      "ID": 47,
       "Category": "relaxation",
       "Activity": "meditate",
       "minTime": 5,
@@ -424,6 +471,7 @@
       "Description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     {
+      "ID": 48,
       "Category": "relaxation",
       "Activity": "meditate",
       "minTime": 15,
@@ -433,6 +481,7 @@
       "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     {
+      "ID": 49,
       "Category": "relaxation",
       "Activity": "do a face mask",
       "minTime": 10,
@@ -442,6 +491,7 @@
       "Description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
+      "ID": 50,
       "Category": "relaxation",
       "Activity": "stretch",
       "minTime": 30,
@@ -451,6 +501,7 @@
       "Description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     {
+      "ID": 51,
       "Category": "relaxation",
       "Activity": "stretch",
       "minTime": 5,
@@ -460,6 +511,7 @@
       "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     {
+      "ID": 52,
       "Category": "kitchen fun",
       "Activity": "bake bread",
       "minTime": 60,
@@ -469,6 +521,7 @@
       "Description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
+      "ID": 53,
       "Category": "kitchen fun",
       "Activity": "bake a cake",
       "minTime": 60,
@@ -478,6 +531,7 @@
       "Description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     {
+      "ID": 54,
       "Category": "kitchen fun",
       "Activity": "bake cupcakes",
       "minTime": 30,
@@ -487,6 +541,7 @@
       "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     {
+      "ID": 55,
       "Category": "kitchen fun",
       "Activity": "make pasta from scratch",
       "minTime": 60,
@@ -496,6 +551,7 @@
       "Description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
+      "ID": 56,
       "Category": "kitchen fun",
       "Activity": "make your favorite dish from your childhood",
       "minTime": 30,
@@ -505,6 +561,7 @@
       "Description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     {
+      "ID": 57,
       "Category": "kitchen fun",
       "Activity": "Bake Cookies",
       "minTime": 30,
@@ -514,6 +571,7 @@
       "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     {
+      "ID": 58,
       "Category": "kitchen fun",
       "Activity": "recreate your favorite resturaunt meal",
       "minTime": 60,
@@ -523,6 +581,7 @@
       "Description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
+      "ID": 59,
       "Category": "productivity",
       "Activity": "clean/organize your bathroom",
       "minTime": 15,
@@ -532,6 +591,7 @@
       "Description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     {
+      "ID": 60,
       "Category": "productivity",
       "Activity": "organize your closet",
       "minTime": 20,
@@ -541,6 +601,7 @@
       "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     {
+      "ID": 61,
       "Category": "productivity",
       "Activity": "rotate your mattress",
       "minTime": 5,
@@ -550,6 +611,7 @@
       "Description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
+      "ID": 62,
       "Category": "productivity",
       "Activity": "update your resume",
       "minTime": 15,
@@ -559,6 +621,7 @@
       "Description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     {
+      "ID": 63,
       "Category": "productivity",
       "Activity": "make some personal finance goals, or check in with your past financial goals",
       "minTime": 20,
