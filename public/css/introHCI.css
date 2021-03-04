@@ -137,6 +137,8 @@ body {
 
 .deleteclass{
 	display:none;
+	display:block;
+	opacity: 0%;
 }
 
 /*for filter only*/

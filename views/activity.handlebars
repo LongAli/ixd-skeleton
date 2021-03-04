@@ -9,9 +9,10 @@
 	<link rel="stylesheet" href="/css/styles.css">
 	<link rel="stylesheet" href="/css/introHCI.css">
 </head>
+
 <body>
 	<a href = "/index">
-		<svg style ="margin-top:5%; margin-left:5%;" xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+		<svg style ="margin-top:5%; margin-left:5%;" xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#000000" class="bi bi-x" viewBox="0 0 16 16">
 			<path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
 		</svg>
 	</a>
@@ -21,19 +22,18 @@
 			<div class="col-sm content">
 				<h3 class="title">{{Activity}}</h3>
 				<div class="video">
-					<iframe width="420" height="350" src="{{Link}}">
+					<iframe width="auto" height="350" src="{{Link}}">
 					</iframe>
 				</div>
 				<p class="description">{{Description}}</p>
 				<h3 id="timer">0:00</h3>
 			</div>
-			
 		</div>
 
 		<div class="row">
 			<div class="col-sm">
 				<div class="buttons">
-					<button id="secondary">
+					{{!-- <button id="secondary">
 						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-repeat"
 							viewBox="0 0 16 16">
 							<path
@@ -41,7 +41,7 @@
 							<path fill-rule="evenodd"
 								d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z" />
 						</svg>
-						Try Another</button>
+						Try Another</button> --}}
 					<button id="primary">Start</button>
 					<a href="/complete">
 						<button class="btn btn-outline-primary btn-block">Complete</button>
@@ -54,12 +54,12 @@
 	</div>
 	
 	{{!-- js --}}
-	<script>
-		const tryBtn = document.getElementById('secondary');
-		tryBtn.addEventListener('click', function (e) {
-			alert('Coming Soon!');
+	{{!-- <script>
+		//const tryBtn = document.getElementById('secondary');
+		//tryBtn.addEventListener('click', function (e) {
+		//	alert('Coming Soon!');
 		});
-	</script>
+	</script> --}}
 	<script src="/js/timer.js"></script>
 	{{!-- <script src="/js/bootstrap.min.js"></script> --}}
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

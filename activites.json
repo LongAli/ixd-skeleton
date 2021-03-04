@@ -1,5 +1,6 @@
-{
-  "activites": [
+
+ {
+   "activites": [
     {
       "ID": 1,
       "Category": "exercise",
@@ -66,7 +67,7 @@
       "Activity": "Biking",
       "minTime": 20,
       "Tags": "outdoor",
-      "Image": "https://source.unsplash.com/IE9PKXWpRGU/1600x900",
+      "Image": "https://source.unsplash.com/IE9PKXWpRGU",
       "Link": "",
       "Description": "Enjoy biking for 20 minutes in the beautiful outdoors."
     },
@@ -76,7 +77,7 @@
       "Activity": "Jump Rope",
       "minTime": 5,
       "Tags": "both",
-      "Image": "https://source.unsplash.com/7QYd1VxLRbM/1600x900",
+      "Image": "https://source.unsplash.com/7QYd1VxLRbM",
       "Link": "",
       "Description": "Jump roping is a great way to squeeze in a lot of cardio! Start a 5 minute jump rope session."
     },
@@ -86,7 +87,7 @@
       "Activity": "Hula Hoop",
       "minTime": 5,
       "Tags": "both",
-      "Image": "https://source.unsplash.com/HC1I-tgIDq0/1600x900",
+      "Image": "https://source.unsplash.com/HC1I-tgIDq0",
       "Link": "",
       "Description": "Start a 5 minute hula hoop session to get some quick cardio during your break."
     },
@@ -96,7 +97,7 @@
       "Activity": "Walking",
       "minTime": 10,
       "Tags": "outdoor",
-      "Image": "https://source.unsplash.com/nVDB1IGq64s/1600x900",
+      "Image": "https://source.unsplash.com/nVDB1IGq64s",
       "Link": "",
       "Description": "Take a relaxing walk outdoors to clear your mind for a great break."
     },
@@ -106,7 +107,7 @@
       "Activity": "Running",
       "minTime": 10,
       "Tags": "outdoor",
-      "Image": "https://source.unsplash.com/7DCZgKyp8vw/1600x900",
+      "Image": "https://source.unsplash.com/7DCZgKyp8vw",
       "Link": "",
       "Description": "Go for a quick 10 minute run outdoors!"
     },
@@ -116,7 +117,7 @@
       "Activity": "Make A Playlist",
       "minTime": 10,
       "Tags": "indoor",
-      "Image": "https://source.unsplash.com/3NgcTH0CFJg/1600x900",
+      "Image": "https://source.unsplash.com/3NgcTH0CFJg",
       "Link": "",
       "Description": "Take 10 minutes to start making a playlist on your favorite music app."
     },
@@ -126,7 +127,7 @@
       "Activity": "Learn A New Piece Of Music",
       "minTime": 20,
       "Tags": "indoor",
-      "Image": "https://source.unsplash.com/bu-6kNWQj6U/1600x900",
+      "Image": "https://source.unsplash.com/bu-6kNWQj6U",
       "Link": "",
       "Description": "Do you play an instrument? Take 20 minutes to start learning a new piece."
     },
@@ -136,7 +137,7 @@
       "Activity": "Listen To A New Album",
       "minTime": 20,
       "Tags": "indoor",
-      "Image": "https://source.unsplash.com/tgmyo9lWll4/1600x900",
+      "Image": "https://source.unsplash.com/photos/tgmyo9lWll4",
       "Link": "",
       "Description": "Take 20 minutes to listen to a new ablum from an artist you've never explored yet!"
     },
@@ -146,7 +147,7 @@
       "Activity": "Write A Song",
       "minTime": 10,
       "Tags": "indoor",
-      "Image": "https://source.unsplash.com/ddwbTn5HDdQ/1600x900",
+      "Image": "https://unsplash.com/photos/ddwbTn5HDdQ",
       "Link": "",
       "Description": "Pull out your journal and start writing a song during your 10 minute break."
     },
@@ -156,7 +157,7 @@
       "Activity": "Look Up Your Current Mood On Spotify And Listen To That Playlist",
       "minTime": 10,
       "Tags": "indoor",
-      "Image": "https://source.unsplash.com/RNYB6v3XoE8/1600x900",
+      "Image": "https://unsplash.com/photos/RNYB6v3XoE8",
       "Link": "",
       "Description": "Take 10 minutes to search your current mood on Spotify and listen to the first playlist that comes up."
     },
@@ -166,7 +167,7 @@
       "Activity": "Paint",
       "minTime": 10,
       "Tags": "indoor",
-      "Image": "https://source.unsplash.com/QrYt4_K5TIc/1600x900",
+      "Image": "https://unsplash.com/photos/QrYt4_K5TIc",
       "Link": "",
       "Description": "Time to play with some paints! Do a quick 10 minute painting or take 10 minutes start a new masterpiece."
     },
@@ -176,7 +177,7 @@
       "Activity": "Draw",
       "minTime": 10,
       "Tags": "indoor",
-      "Image": "https://source.unsplash.com/eKkeKfDt1Vk/1600x900",
+      "Image": "https://unsplash.com/photos/eKkeKfDt1Vk",
       "Link": "",
       "Description": "It's time to sketch! Do a quick 10 minute drawing or take 10 minutes start a new masterpiece."
     },
@@ -186,7 +187,7 @@
       "Activity": "Color",
       "minTime": 10,
       "Tags": "indoor",
-      "Image": "https://source.unsplash.com/ZsvuETrThX8/1600x900",
+      "Image": "https://unsplash.com/photos/ZsvuETrThX8",
       "Link": "",
       "Description": "Take 10 minutes to relax and color in a coloring book, if you have one! If not, feel free to draw a few doodles and add some color to those."
     },
@@ -196,7 +197,7 @@
       "Activity": "Craft Something For A Friend",
       "minTime": 15,
       "Tags": "indoor",
-      "Image": "https://source.unsplash.com/lJU5KvoHQHk/1600x900",
+      "Image": "https://unsplash.com/photos/lJU5KvoHQHk",
       "Link": "",
       "Description": "Create something nice for a friend (or for yourself). Check out your local arts and crafts store for some specific inspiration."
     },
@@ -206,7 +207,7 @@
       "Activity": "Decorate Something For Your Room",
       "minTime": 15,
       "Tags": "indoor",
-      "Image": "https://source.unsplash.com/4W5WWKaxsKs/1600x900",
+      "Image": "https://unsplash.com/photos/4W5WWKaxsKs",
       "Link": "",
       "Description": "Switch things up in your room by adding some new decorations! Either shop for something fresh or take 15 minutes to start a DIY craft."
     },
@@ -216,7 +217,7 @@
       "Activity": "Sidewalk Chalk",
       "minTime": 10,
       "Tags": "outdoor",
-      "Image": "https://source.unsplash.com/StgZKNLVeJg/1600x900",
+      "Image": "https://unsplash.com/photos/StgZKNLVeJg",
       "Link": "",
       "Description": "Relax for 10 minutes by taking a trip to your local park and adding some sparkle to the sidewalk with some chalk."
     },
@@ -226,7 +227,7 @@
       "Activity": "Photography",
       "minTime": 10,
       "Tags": "both",
-      "Image": "https://source.unsplash.com/ZcOaFnQ8ACk/1600x900",
+      "Image": "https://unsplash.com/photos/ZcOaFnQ8ACk",
       "Link": "",
       "Description": "Take a creative photograph of yourself and edit it to your liking."
     },
@@ -236,7 +237,7 @@
       "Activity": "Make A Graphic",
       "minTime": 10,
       "Tags": "indoor",
-      "Image": "https://source.unsplash.com/ubIWo074QlU/1600x900",
+      "Image": "https://unsplash.com/photos/ubIWo074QlU",
       "Link": "",
       "Description": "Make a graphic of one of your hobbies or redesign a logo of your favorite brand."
     },
@@ -246,7 +247,7 @@
       "Activity": "Photography",
       "minTime": 10,
       "Tags": "indoor",
-      "Image": "https://source.unsplash.com/9ryNj0e_XNY/1600x900",
+      "Image": "https://unsplash.com/photos/9ryNj0e_XNY",
       "Link": "",
       "Description": "Take a photograph of something in your house from a different point of view. Appreciate that new perspective for 10 minutes."
     },
@@ -256,7 +257,7 @@
       "Activity": "Do A Puzzle",
       "minTime": 20,
       "Tags": "indoor",
-      "Image": "https://source.unsplash.com/LuaT29bdjMA/1600x900",
+      "Image": "https://unsplash.com/photos/LuaT29bdjMA",
       "Link": "",
       "Description": "Relax for 20 minutes by starting a puzzle or working on an existing puzzle."
     },
@@ -266,7 +267,7 @@
       "Activity": "Journal",
       "minTime": 10,
       "Tags": "indoor",
-      "Image": "https://source.unsplash.com/CKlHKtCJZKk/1600x900",
+      "Image": "https://unsplash.com/photos/CKlHKtCJZKk",
       "Link": "",
       "Description": "Start a journal entry or pick up from where you last left off for a 10 minute self exploration break."
     },
@@ -276,7 +277,7 @@
       "Activity": "Write A Poem",
       "minTime": 10,
       "Tags": "indoor",
-      "Image": "https://source.unsplash.com/NUQtVifTqs4/1600x900",
+      "Image": "https://unsplash.com/photos/NUQtVifTqs4",
       "Link": "",
       "Description": "Take a 10 minute poetry break and let your creative side shine."
     },
@@ -286,7 +287,7 @@
       "Activity": "Write A Song",
       "minTime": 10,
       "Tags": "indoor",
-      "Image": "https://source.unsplash.com/ddwbTn5HDdQ/1600x900",
+      "Image": "https://unsplash.com/photos/ddwbTn5HDdQ",
       "Link": "",
       "Description": "Pull out your journal and start writing a song during your 10 minute break."
     },
@@ -296,7 +297,7 @@
       "Activity": "Write A Letter To A Penpal",
       "minTime": 10,
       "Tags": "indoor",
-      "Image": "https://source.unsplash.com/U_DJOoSDhNo/1600x900",
+      "Image": "https://unsplash.com/photos/U_DJOoSDhNo",
       "Link": "",
       "Description": "Find a penpal online and write a letter addressed to them."
     },
@@ -306,7 +307,7 @@
       "Activity": "Upcycle A Piece Of Clothing",
       "minTime": 30,
       "Tags": "indoor",
-      "Image": "https://source.unsplash.com/WgRj6Hc7yZw/1600x900",
+      "Image": "https://unsplash.com/photos/WgRj6Hc7yZw",
       "Link": "",
       "Description": "Turn something you barely wear into a new clothing piece by upcycling it!"
     },
@@ -316,17 +317,17 @@
       "Activity": "Design A Tattoo",
       "minTime": 10,
       "Tags": "indoor",
-      "Image": "https://source.unsplash.com/77yU7LB7gBk/1600x900",
+      "Image": "https://unsplash.com/photos/77yU7LB7gBk",
       "Link": "",
       "Description": "Whether or not you'll get a tattoo, take 10 minutes to sketch out a cool design for your break."
     },
     {
       "ID": 33,
       "Category": "nature",
-      "Activity": "Plant A Seed",
+      "Activity": "plant a seed",
       "minTime": 10,
       "Tags": "outdoor",
-      "Image": "https://source.unsplash.com/4PG6wLlVag4/1600x900",
+      "Image": "https://unsplash.com/photos/4PG6wLlVag4",
       "Link": "",
       "Description": "Take 10 minutes to plant a seed of your choice. The Earth will thank you!"
     },
@@ -336,7 +337,7 @@
       "Activity": "Walk",
       "minTime": 10,
       "Tags": "outdoor",
-      "Image": "https://source.unsplash.com/nVDB1IGq64s/1600x900",
+      "Image": "https://unsplash.com/photos/nVDB1IGq64s",
       "Link": "",
       "Description": "Take a relaxing walk outdoors to clear your mind for a great break."
     },
@@ -346,7 +347,7 @@
       "Activity": "Hike",
       "minTime": 40,
       "Tags": "outdoor",
-      "Image": "https://source.unsplash.com/Yizrl9N_eDA/1600x900",
+      "Image": "https://unsplash.com/photos/Yizrl9N_eDA",
       "Link": "",
       "Description": "Go on a hike and adventure during your 40 minute break."
     },
@@ -356,7 +357,7 @@
       "Activity": "Tend To Your Garden",
       "minTime": 20,
       "Tags": "outdoor",
-      "Image": "https://source.unsplash.com/sFydXGrt5OA/1600x900",
+      "Image": "https://unsplash.com/photos/sFydXGrt5OA",
       "Link": "",
       "Description": "Take 20 minutes to look after your garden. Don't have a garden? Start one!"
     },
@@ -366,7 +367,7 @@
       "Activity": "Read About A Plant In Your Garden",
       "minTime": 10,
       "Tags": "outdoor",
-      "Image": "https://source.unsplash.com/D9hyvnamCn0/1600x900",
+      "Image": "https://unsplash.com/photos/D9hyvnamCn0",
       "Link": "",
       "Description": "Learn a little more about what your grow. Take a 10 minute break to search up some fun facts about a plant in your backyard or garden."
     },
@@ -376,7 +377,7 @@
       "Activity": "Read a Book",
       "minTime": 40,
       "Tags": "indoor",
-      "Image": "https://source.unsplash.com/4RNLzJzEMMs/1600x900",
+      "Image": "https://unsplash.com/photos/4RNLzJzEMMs",
       "Link": "",
       "Description": "Read a book you've always been meaning to read or continue reading a book you already started."
     },
@@ -386,7 +387,7 @@
       "Activity": "Read An Article",
       "minTime": 30,
       "Tags": "indoor",
-      "Image": "https://source.unsplash.com/dwbzzB03gUE/1600x900",
+      "Image": "https://unsplash.com/photos/dwbzzB03gUE",
       "Link": "",
       "Description": "Read an article about something that interests you or has been on your mind."
     },
@@ -396,7 +397,7 @@
       "Activity": "Listen To An Audiobook",
       "minTime": 30,
       "Tags": "indoor",
-      "Image": "https://source.unsplash.com/v0HbU2CNJFs/1600x900",
+      "Image": "https://unsplash.com/photos/v0HbU2CNJFs",
       "Link": "",
       "Description": "Listen to an audiobook of your choice for a 30 minute screen-time break."
     },
@@ -406,7 +407,7 @@
       "Activity": "Listen To A Podcast",
       "minTime": 30,
       "Tags": "indoor",
-      "Image": "https://source.unsplash.com/UUPpu2sYV6E/1600x900",
+      "Image": "https://unsplash.com/photos/UUPpu2sYV6E",
       "Link": "",
       "Description": "Listen to a podcast of your choice for a 30 minute screen-time break."
     },
@@ -416,7 +417,7 @@
       "Activity": "What's Your Favorite Animal? Read An Article About Them.",
       "minTime": 10,
       "Tags": "indoor",
-      "Image": "https://source.unsplash.com/BuQ1RZckYW4/1600x900",
+      "Image": "https://unsplash.com/photos/BuQ1RZckYW4",
       "Link": "",
       "Description": "Take 10 minutes to learn more about why your favorite animal is the best of them all."
     },
@@ -426,7 +427,7 @@
       "Activity": "Read The News",
       "minTime": 15,
       "Tags": "indoor",
-      "Image": "https://source.unsplash.com/aId-xYRTlEc/1600x900",
+      "Image": "https://unsplash.com/photos/aId-xYRTlEc",
       "Link": "",
       "Description": "Read the first news article that pops up when you click the \"News\" tab on Google."
     },
@@ -436,7 +437,7 @@
       "Activity": "Yoga",
       "minTime": 30,
       "Tags": "both",
-      "Image": "https://source.unsplash.com/dkg-zps94uw/1600x900",
+      "Image": "https://unsplash.com/photos/dkg-zps94uw",
       "Link": "https://www.youtube.com/watch?v=hJbRpHZr_d0&feature=emb_title",
       "Description": "Take a break with some relaxing Yoga."
     },
@@ -446,7 +447,7 @@
       "Activity": "meditate",
       "minTime": 20,
       "Tags": "both",
-      "Image": "https://source.unsplash.com/NTyBbu66_SI/1600x900",
+      "Image": "https://unsplash.com/photos/NTyBbu66_SI",
       "Link": "https://www.youtube.com/watch?v=rM_km4E3NYs",
       "Description": "Take 20 minutes to take a brain break from everything around you and meditate."
     },
@@ -456,7 +457,7 @@
       "Activity": "meditate",
       "minTime": 10,
       "Tags": "both",
-      "Image": "https://source.unsplash.com/NTyBbu66_SI/1600x900",
+      "Image": "https://unsplash.com/photos/NTyBbu66_SI",
       "Link": "https://www.youtube.com/watch?v=6p_yaNFSYao",
       "Description": "Take 10 minutes to take a brain break from everything around you and meditate."
     },
@@ -466,7 +467,7 @@
       "Activity": "meditate",
       "minTime": 5,
       "Tags": "both",
-      "Image": "https://source.unsplash.com/NTyBbu66_SI/1600x900",
+      "Image": "https://unsplash.com/photos/NTyBbu66_SI",
       "Link": "https://www.youtube.com/watch?v=i50ZAs7v9es",
       "Description": "Take 5 minutes to take a brain break from everything around you and meditate."
     },
@@ -476,7 +477,7 @@
       "Activity": "meditate",
       "minTime": 15,
       "Tags": "both",
-      "Image": "https://source.unsplash.com/NTyBbu66_SI/1600x900",
+      "Image": "https://unsplash.com/photos/NTyBbu66_SI",
       "Link": "https://www.youtube.com/watch?v=p29mwfzpNc4",
       "Description": "Take 15 minutes to take a brain break from everything around you and meditate."
     },
@@ -486,7 +487,7 @@
       "Activity": "Do A Clay Or Sheet Mask",
       "minTime": 10,
       "Tags": "indoor",
-      "Image": "https://source.unsplash.com/AyqNM8D2aEI/1600x900",
+      "Image": "https://unsplash.com/photos/AyqNM8D2aEI",
       "Link": "",
       "Description": "Relax with a clay or sheet face mask for 10 minutes."
     },
@@ -496,7 +497,7 @@
       "Activity": "stretch",
       "minTime": 30,
       "Tags": "both",
-      "Image": "https://source.unsplash.com/We6cFKHo8sQ/1600x900",
+      "Image": "https://unsplash.com/photos/We6cFKHo8sQ",
       "Link": "https://www.youtube.com/watch?v=qULTwquOuT4",
       "Description": "Take a 30 minute stretch break."
     },
@@ -506,7 +507,7 @@
       "Activity": "stretch",
       "minTime": 5,
       "Tags": "both",
-      "Image": "https://source.unsplash.com/We6cFKHo8sQ/1600x900",
+      "Image": "https://unsplash.com/photos/We6cFKHo8sQ",
       "Link": "https://www.youtube.com/watch?v=pH6KMX0V7d0",
       "Description": "Take a quick 5 minute stretch break."
     },
@@ -516,7 +517,7 @@
       "Activity": "Bake Bread",
       "minTime": 60,
       "Tags": "indoor",
-      "Image": "https://source.unsplash.com/ir3VHDcw-fY/1600x900",
+      "Image": "https://unsplash.com/photos/ir3VHDcw-fY",
       "Link": "",
       "Description": "Bake some yummy bread."
     },
@@ -526,7 +527,7 @@
       "Activity": "Bake A Cake",
       "minTime": 60,
       "Tags": "indoor",
-      "Image": "https://source.unsplash.com/3K6qK5ZA_7w/1600x900",
+      "Image": "https://unsplash.com/photos/3K6qK5ZA_7w",
       "Link": "",
       "Description": "Bake a delicious cake for yourself and others to enjoy."
     },
@@ -536,7 +537,7 @@
       "Activity": "Bake Cupcakes",
       "minTime": 30,
       "Tags": "indoor",
-      "Image": "https://source.unsplash.com/IVcI_J7ETLg/1600x900",
+      "Image": "https://unsplash.com/photos/IVcI_J7ETLg",
       "Link": "",
       "Description": "Bake a batch of cupcakes to snack on even after your break ends."
     },
@@ -546,7 +547,7 @@
       "Activity": "Make Pasta From Scratch",
       "minTime": 60,
       "Tags": "indoor",
-      "Image": "https://source.unsplash.com/JG5tkvNqbZk/1600x900",
+      "Image": "https://unsplash.com/photos/JG5tkvNqbZk",
       "Link": "",
       "Description": "Try making some homemade pasts from scratch!"
     },
@@ -556,17 +557,17 @@
       "Activity": "Make Your Favorite Dish From Your Childhood",
       "minTime": 30,
       "Tags": "indoor",
-      "Image": "https://source.unsplash.com/geG4C3qyiG0/1600x900",
+      "Image": "https://unsplash.com/photos/geG4C3qyiG0",
       "Link": "",
       "Description": "What's your favorite dish from when you were a child? Time to recreate that dish!"
     },
     {
       "ID": 57,
       "Category": "kitchen fun",
-      "Activity": "Bake Cookies",
+      "Activity": "bake cookies",
       "minTime": 30,
       "Tags": "indoor",
-      "Image": "https://source.unsplash.com/tDoHiqXl9b8/1600x900",
+      "Image": "https://unsplash.com/photos/tDoHiqXl9b8",
       "Link": "",
       "Description": "Bake a batch of your favorite type of cookies."
     },
@@ -576,7 +577,7 @@
       "Activity": "Recreate Your Favorite Resturaunt Meal",
       "minTime": 60,
       "Tags": "indoor",
-      "Image": "https://source.unsplash.com/nj22gb3XKCM/1600x900",
+      "Image": "https://unsplash.com/photos/nj22gb3XKCM",
       "Link": "",
       "Description": "Craving your favorite resturaunt meal? Time to recreate it."
     },
@@ -586,7 +587,7 @@
       "Activity": "Clean & Organize Your Bathroom",
       "minTime": 15,
       "Tags": "indoor",
-      "Image": "https://source.unsplash.com/d0WU6KSp918/1600x900",
+      "Image": "https://unsplash.com/photos/d0WU6KSp918",
       "Link": "",
       "Description": "It's a great day to tidy up or deep clean your bathroom."
     },
@@ -596,7 +597,7 @@
       "Activity": "Organize Your Closet",
       "minTime": 20,
       "Tags": "indoor",
-      "Image": "https://source.unsplash.com/XjR-Y8PKeww/1600x900",
+      "Image": "https://unsplash.com/photos/XjR-Y8PKeww",
       "Link": "",
       "Description": "Take 20 minutes to organize your closet."
     },
@@ -606,7 +607,7 @@
       "Activity": "Rotate Your Mattress",
       "minTime": 5,
       "Tags": "indoor",
-      "Image": "https://source.unsplash.com/h_xf5vHZmRM/1600x900",
+      "Image": "https://unsplash.com/photos/h_xf5vHZmRM",
       "Link": "",
       "Description": "Take 5 minutes to rotate your mattress."
     },
@@ -616,7 +617,7 @@
       "Activity": "Update Your Resume",
       "minTime": 15,
       "Tags": "indoor",
-      "Image": "https://source.unsplash.com/7iSEHWsxPLw/1600x900",
+      "Image": "https://unsplash.com/photos/7iSEHWsxPLw",
       "Link": "",
       "Description": "Take 15 minutes to update your resume."
     },
@@ -626,9 +627,9 @@
       "Activity": "Make Some Finance Goals",
       "minTime": 20,
       "Tags": "indoor",
-      "Image": "https://source.unsplash.com/IrRbSND5EUc/1600x900",
+      "Image": "https://unsplash.com/photos/IrRbSND5EUc",
       "Link": "",
       "Description": "Make some personal finance goals, or check in with your past financial goals."
     }
   ]
-}
+ }
