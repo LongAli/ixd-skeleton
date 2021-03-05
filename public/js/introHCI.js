@@ -22,6 +22,18 @@
 /*
  * Make an AJAX call to retrieve project details and add it in
  */
+
+
+function deleteClick(e) {
+	e.preventDefault();
+	console.log('The Delete Functionality has not been implemented yet :)');
+	console.log(this);
+	var toDel = data.toLog.unshift(this);
+	data.toLog.splice(toDel, 1);
+	//console.log(data);
+	//data.toLog.unshift("HI");
+}
+
 function addProjectDetails(e) {
 	// Prevent following the link
 	e.preventDefault();
@@ -58,6 +70,6 @@ function callBackFn(result) {
 // 		console.log(data);
 // 	});
 
-function comingSoon(e) {
-	alert('Coming Soon!');
-}
+// function comingSoon(e) {
+// 	alert('Coming Soon!');
+// }

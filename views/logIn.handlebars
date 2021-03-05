@@ -8,6 +8,8 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
 		integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 	<link href="/css/introHCI.css" rel="stylesheet">
+	{{> facebook}}
+	<script src="/js/facebook.js"></script>
 	
 
 <!--FB account log in -->
@@ -19,7 +21,7 @@
 
 </head>
 <body>
-	<!-- this is a comment in HTML -->
+	
 	<header class="jumbotron">
 		<div class="container">
 			<div class="row">
@@ -58,6 +60,22 @@
 					</a>
 					
 				</form>
+				<script src="http://connect.facebook.net/en_US/all.js">
+				</script>
+				<script>
+					FB.init({
+						appId: '2570729263220103', cookie: true,
+						status: true, xfbml: true
+					});
+					FB.Event.subscribe('auth.login', function () {
+						window.location = "https://a6-lacuna.herokuapp.com/index";
+					});
+				</script>
+				<div class="fb-login">
+					<p>or</p>
+					<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+					</fb:login-button>
+				</div>
 			</div>
 		</div>
 

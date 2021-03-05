@@ -9,35 +9,32 @@
 	<link href="/css/introHCI.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<!-- this is a comment in HTML -->
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 
+
 <!--FB account log in -->
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
 	<script src="/js/introHCI.js"></script>
-	{{!-- {{> facebook}}
-	<script src="/js/facebook.js"></script>
+
+	{{!-- <script src="/js/facebook.js"></script> --}}
+	{{!-- <script src="/js/facebook.js"></script>
 	<script src="/js/loadStuff.js"></script> --}}
 
 </head>
 
 
 <body>
-
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0"
+		nonce="zp9mSAr7"></script>
 	<div class="container">
-		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
-		<!-- p means paragraph -->
 		
 		<!--fixed menu top--> 
 			<!--Navbar-->
-
 
 		<div class="jumbotron fixed-top">
 			<h1 id="name">&nbsp;&nbsp;&nbsp;&nbsp;Activity log</h1>
@@ -57,6 +54,9 @@
 					</div>
 			</div>
 		</div>
+		{{!-- <p class="facebookLogin">Please login through Facebook</p>
+		<fb:login-button id="fb_button" scope="public_profile,email" onlogin="checkLoginState();">
+		</fb:login-button> --}}
 		
 		<!-- log in w/facebook
 			<p class="facebookLogin">Please login through Facebook</p>
@@ -70,9 +70,6 @@
 		</div>
 		--> 
 
-		<!-- divs are invisible structuring elements that stack vertically by default. Use them to organize your code -->
-		<!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
-		<!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
 		<br><br><br><br><br><br><br><br>
 	
 	<form id="addFriendForm" role="form" method="get" action="/add"></form>
@@ -84,12 +81,16 @@
 
 					<h2 class="card-title">{{Activity}}</h2>
 					<div id="share-link">
-						<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#F59292" class="bi bi-share"
-							viewBox="0 0 16 16">
-						
-							<path
-								d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
-						</svg>
+						<button type="button" class="btn btn-primary btn-block btnShare" data-href="https://a6-lacuna.herokuapp.com/" data-title="Lacuna">
+							<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#F59292" class="bi bi-share" viewBox="0 0 16 16">
+							
+								<path
+									d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+							</svg>
+							<a target="_blank"
+								href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fa6-lacuna.herokuapp.com%2F&amp;src=sdkpreparse"
+								class="fb-xfbml-parse-ignore">Share</a>
+						</button>
 					</div>
 				</div>
 				<h3 class="card-subtitle mb-2 text-muted" >{{minTime}} minutes</h3>
@@ -101,8 +102,8 @@
 				</div>
 				<br>
 				<div class="card-iteminline">
-					<button type="button" data-toggle="modal" data-target="#myModal">
-						 <a href="#" class="card-link delete" id={{ID}}>
+					<button type="btn-secondary" data-toggle="modal" data-target="#myModal">
+						<a href="#" class="card-link delete" id={{ID}}>
 							 Delete
 						</a>
 						</button>
@@ -131,7 +132,7 @@
 
 						      <!-- Modal footer -->
 						      <div class="modal-footer">
-						        <button type="button" class="btn btn-danger" data-dismiss="modal">Delete</button>
+						        <button type="button" class="btn btn-danger" data-dismiss="modal" id="modal-delete">Delete</button>
 						      </div>
 
 						    </div>
@@ -210,15 +211,10 @@
 
 	//var button = document.querySelector("#delete");
 	//var ele = document.querySelector("#card");
-	//button.addEventListener('click', deleteClick(e) {
-	//	ele.parentNode.removeChild(ele);
-	//});
+	
 	
 
-	const sharebtn = document.getElementById('share-link');
-	sharebtn.addEventListener('click', function (e) {
-		alert('Coming Soon!');
-	});
+	
 </script>
 </body>
 </html>
