@@ -104,7 +104,7 @@
 				</div>
 				<br>
 				<div class="card-iteminline">
-					<button type="btn-secondary" data-toggle="modal" data-target="#myModal">
+					<button type="btn-secondary" data-toggle="modal" data-target="#myModal{{ID}}">
 						<a href="#" class="card-link">
 							 Delete
 						</a>
@@ -117,7 +117,7 @@
 						 <!-- Button to Open the Modal -->
 
 						<!-- The Modal -->
-						<div class="modal" id="myModal">
+						<div class="modal" id="myModal{{ID}}">
 						  <div class="modal-dialog">
 						    <div class="modal-content">
 
@@ -171,65 +171,11 @@
 <script>
 	$('.delete').click(function () {
 		var currentIDs = JSON.parse(localStorage.getItem("saveIDarr"));
-		//console.log(currentIDs);
 		var targetID = $(this).attr("id");
 		localStorage.setItem("targetID", targetID);
-		
-		//window.location.href = '/delete?targetID='+targetID;	
-			//$( ".delete" ).fadeOut( "slow", function() {
-        		// Animation complete.
-      		//});
-    });
-	//$(".delete").click(function(){
-	//	var deleteID = $(this).attr("ID");
-	//	var activityID = $(".card").attr("ID");
-
-
-	//	console.log(deleteID);
-	//	console.log(activityID);
-		//var deleteID = Document.getElementById('.card');
-	//	var newClass = document.querySelector(".card");
-	//	if (deleteID === activityID){
-	//		$( "#"+deleteID+'.card').hide();
-	//	}
-	//})
-		//var deleted_array = JSON.parse(localStorage.getItem(deleted)); 
-		//deleted_array.push(deleteID);
-		//localStorage.set(deleted,deleted_array)
+		window.location.href = '/deleteact?targetID='+targetID;	
 	
-		//if (deleteID == activityID){
-			//$("#foo.bar")
-			//$('deleteID').addClass("deleteclass");
-			
-			//console.log(newClass);
-			
-			//if(element.parentNode) {
-			//	ele.parentNode.removeChild(ele);
-			
-			
-			//element.parentNode.removeChild(element);
-		//}
-				//console.log(ele);
-	
-	
-		//console.log(currentID);
-
-
-		//if (ele.parentNode) {
-		//	$(".card").addClass('currentID');
-			//var currentID = $(this).attr("ID");
-				
-		//}
-
-		//console.log(ele);
-		//var ele = document.querySelector("#card");
-
-	//var button = document.querySelector("#delete");
-	//var ele = document.querySelector("#card");
-	
-	
-
-	
+    });	
 </script>
 </body>
 </html>

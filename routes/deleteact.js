@@ -4,31 +4,17 @@
 
 var data = require('../actLog.json');
 var activities = require('../activites.json');
-////var savedId = [];
-
-//localStorage.setItem("names", JSON.stringify(names));
-
-//...
-//var storedNames = JSON.parse(localStorage.getItem("completedID"));
-
-
-//request.query['activity_index']
-
-function filterID(ele) {
-   var searchCompleted = activities.activites.filter((a) => a.ID == ele);
-   return searchCompleted;
-}
 
 exports.deleteActivity = function(request, response) {
-   const currentIDs = request.query.saveIDarr;
-console.log(currentIDs)
-   console.log("starting to add friends")
 
-   var newActivity;
-   if (request.query['activity_index']) {
-       newActivity = search(request.query['activity_index']);
-       data.toLog.unshift(newActivity[0]);
-   }
+	if (request.query['targetID']) {
+      var targetJson = activities.activites.filter((a) => a.ID == request.query['targetID'])[0];
+      const index = data.toLog.indexOf(targetJson);
+      console.log(request.query['targetID'],index,data.toLog);
+		if (index > -1) {
+         data.toLog.splice(index, 1);
+    }
+	}
    response.render('index', data);
 }
 

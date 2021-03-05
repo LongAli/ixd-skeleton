@@ -12,7 +12,8 @@ function search(ele) {
 
 exports.saveActivity = function(request, response) {
 	//console.log('starting to add friends');
-	var newActivity;
+    var newActivity;
+    
 	if (request.query['activity_index']) {
 		newActivity = search(request.query['activity_index']);
 		data.toLog.unshift(newActivity[0]);
