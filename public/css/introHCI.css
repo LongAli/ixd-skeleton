@@ -99,6 +99,25 @@ button {
 	margin: 8px 0;
 }
 
+/*outline button*/
+.btn-secondary {
+	font-size: 14pt;
+	color:#657dc4 !important;
+	background-color: white !important;
+	border: 1px solid #657dc4 !important;
+	border-radius: 4px;
+	background-image: none;
+	box-shadow: none;
+	text-shadow: none;
+	background-position-y: 0;
+}
+/*links*/
+.tryAgain{
+	font-size: 13pt;
+	color:#657dc4 !important;
+	background-color: white !important;
+}
+
 /*things for the card on home page*/
 .card {
 	margin-bottom: 6%;
@@ -181,6 +200,7 @@ button {
 .card-img-top {
 	max-height: 200pt;
 }
+
 
 .bg-modal {
 	width: 100%;
