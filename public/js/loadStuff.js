@@ -1,13 +1,35 @@
-// var data = require('../actLog.json');
-
-// function SaveDataToLocalStorage(data) {
-// 	var a = [];
-// 	// Parse the serialized data back into an aray of objects
-// 	a = JSON.parse(localStorage.getItem('session')) || [];
-// 	// Push the new data (whether it be an object or anything else) onto the array
-// 	a.push(data);
-// 	// Alert the array value
-// 	alert(a); // Should be something like [Object array]
-// 	// Re-serialize the array back into a string and store it in localStorage
-// 	localStorage.setItem('session', JSON.stringify(a));
-// }
+var data = {
+	toLog: [
+		{
+			ID: '1',
+			Category: 'exercise',
+			Activity: 'Yoga',
+			minTime: 30,
+			Tags: 'indoor',
+			Image: 'https://source.unsplash.com/dkg-zps94uw/1600x900',
+			Link: 'https://www.youtube.com/embed/b1H3xO3x_Js',
+			Description:
+				"I'm new to yoga, so this was a bit harder than I thought. Still had a great time exercising and being more mindful!"
+		},
+		{
+			ID: '2',
+			Category: 'kitchen fun',
+			Activity: 'Bake Cookies',
+			minTime: 30,
+			Tags: 'indoor',
+			Image: 'https://source.unsplash.com/tDoHiqXl9b8/1600x900',
+			Link: 'https://www.youtube.com/embed/uJwekkbGPns',
+			Description: 'Made chocolate chip cookies today! Great recipe, and 10/10 recommend!'
+		},
+		{
+			ID: '3',
+			Category: 'nature',
+			Activity: 'Plant A Seed',
+			minTime: 10,
+			Tags: 'outdoor',
+			Image: 'https://source.unsplash.com/4PG6wLlVag4/1600x900',
+			Link: 'https://www.youtube.com/embed/w77zPAtVTuI',
+			Description: "Started growing an apple tree in the backyard! I can't wait to see how much this seed grows."
+		}
+	]
+};

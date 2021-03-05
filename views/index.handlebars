@@ -31,7 +31,7 @@
 
 
 <body>
-
+	<script src="/js/loadStuff.js"></script>
 	<div class="container">
 		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
 		<!-- p means paragraph -->
@@ -164,21 +164,51 @@
 	</div>
 
 <script>
-	$(".delete").click(function(){
-		var currentID = $(this).attr("ID");
-		console.log(currentID);
-		var ele = document.querySelector("#card");
-		console.log(ele);
-		$("#card").addClass('deleteclass');
+	var activityList = data.toLog;
+	for (let i = 0; i < activityList.length; i++) {
+		localStorage.setItem("test", JSON.stringify(activityList[i]))
+	}
+	//localStorage.setItem("test", JSON.stringify(data.toLog));
+	//var selectedCategory = JSON.parse(localStorage.getItem('selectedCategory')) || [];
+	//console.log(selectedCategory);
+	//const findUserById = (id) => {
+			//const key = Object.keys(data.toLog).find(todo => data.toLog[todo].id === '1')
+			//return data.toLog[key]
+		//}
+	//const delBtn = document.getElementById('modal-delete');
+	//console.log(data.toLog);
+	//var currentID = data.toLog.find(item => item.ID == 2);
+	//console.log(currentID);
+	//console.log(Object.keys(data.toLog));
+	//delBtn.addEventListener('click', function() {
+		//var ele = document.querySelector("#card");
+		//console.log(ele);
+		
+		//const toFind = findUserById(currentID);
+		//console.log(toFind);
+		//ele.parentNode.removeChild(ele);
+	//})
+	//$("#modal-delete").click(function(){
+		//var ele = document.querySelector("#card");
+		//button.addEventListener('click', deleteClick(e) {
+			//ele.parentNode.removeChild(ele);
+		//});
+		//var currentID = $(this).attr("ID");
+
+		//console.log(data.toLog);
+		//data.toLog.splice(currentID, 1);
+		//console.log(data.toLog);
+
+		//var toDel = data.toLog.unshift(this);
+		//data.toLog.splice(toDel, 1);
+		//$("#card").addClass('deleteclass');
 		//var ele = document.querySelector("#card");
 		//$(this).hide();
 		//ele.parentNode.removeChild(ele);
-	})
+	//})
 	//var button = document.querySelector("#delete");
 	//var ele = document.querySelector("#card");
-	//button.addEventListener('click', deleteClick(e) {
-	//	ele.parentNode.removeChild(ele);
-	//});
+	
 	
 
 	const sharebtn = document.getElementById('share-link');
