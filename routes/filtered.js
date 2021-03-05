@@ -16,34 +16,28 @@ var activities = require('../activites.json');
 // tryAgainBtn.addEventListener('click', randomize);
 
 function filterByTime(time) {
-	const results = activities.activites.filter((element) => element.minTime <= time);
+	var results = activities.activites.filter((element) => element.minTime <= time);
 	return results;
 }
 
 function randomize(ele) {
-    const seed = Math.floor(Math.random() * 10 * Object.keys(ele).length);
-    //console.log(seed);
-    //localStorage.save(seed);
-    //const 
-    //localStorage.setItem("currentSelect", currentSelect);
-    const randomElement = ele.activites[parseInt(seed)];
-    return randomElement;
+	const seed = Math.floor(Math.random() * 10 * Object.keys(ele).length);
+	//console.log(seed);
+	//localStorage.save(seed);
+	//const
+	//localStorage.setItem("currentSelect", currentSelect);
+	const randomElement = ele.activites[parseInt(seed)];
+	return randomElement;
 }
 
 exports.view = function(request, response) {
- 	if (request.query['time']) {
+	if (request.query['time']) {
 		results = { activites: filterByTime(request.query['time']) };
 	} else {
 		results = activities;
-    }
-    
-    
-    const e = randomize(results);
-    // console.log("haha");
-    response.render('filtered', e);
+	}
 
- };
-
-
-
-
+	const e = randomize(results);
+	// console.log("haha");
+	response.render('filtered', e);
+};
