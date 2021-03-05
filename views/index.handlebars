@@ -104,7 +104,7 @@
 				</div>
 				<br>
 				<div class="card-iteminline">
-					<button type="btn-secondary" data-toggle="modal" data-target="#myModal">
+					<button type="btn-secondary" data-toggle="modal" data-target="#myModal{{ID}}">
 						<a href="#" class="card-link">
 							 Delete
 						</a>
@@ -117,7 +117,7 @@
 						 <!-- Button to Open the Modal -->
 
 						<!-- The Modal -->
-						<div class="modal" id="myModal">
+						<div class="modal" id="myModal{{ID}}">
 						  <div class="modal-dialog">
 						    <div class="modal-content">
 
@@ -178,18 +178,13 @@
 <script>
 	$('.delete').click(function () {
 		var currentIDs = JSON.parse(localStorage.getItem("saveIDarr"));
-		//console.log(currentIDs);
 		var targetID = $(this).attr("id");
 		localStorage.setItem("targetID", targetID);
+		window.location.href = '/deleteact?targetID='+targetID;	
+	
+    });	
 		
-		//window.location.href = '/delete?targetID='+targetID;	
-			//$( ".delete" ).fadeOut( "slow", function() {
-        		// Animation complete.
-      		//});
-    });
 	var array = JSON.parse(localStorage.getItem("saveIDarr"));
-
-
    if(array != null){
     	$('#myArrow').hide();
     	$('#myText').hide();
