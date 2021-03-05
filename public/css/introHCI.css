@@ -194,6 +194,11 @@ body {
 	text-align: center;
 }
 
+/*image*/
+.card-img-top{
+	max-height: 200pt;
+}
+
 .bg-modal {
 	width: 100%;
 	height: 100%;

@@ -4,7 +4,6 @@
 
  var data = require('../actLog.json');
  var activities = require('../activites.json');
- //const fs = require("fs"); 
 
  function search(ele) {
 	var searchCompleted = activities.activites.filter((a) => a.ID == ele);
@@ -14,48 +13,42 @@
  exports.saveActivity = function(request, response) {
     console.log("starting to add friends")
 
-
-
     var newActivity;
     if (request.query['activity_index']) {
         newActivity = search(request.query['activity_index']);
         data.toLog.unshift(newActivity[0]);
 	}
-
-    //console.log(newActivity);
-    //var objLength = Object.keys(activities).length;
-   
-    
-    //console.log("jj");
-    //console.log(data);
-    // const assignedID = request.newActivity.ID;
-    // const activity = request.query.Activity;
-    // const time = request.query.minTime;
-    // const description = request.query.Description;
-    // const image = request.query.Image;
-
-    // console.log(assignedID);
-
-    // //data[assignedID] = idNumber;
-    // const newAc = {
-    //     "ID": assignedID,
-    //     "Activity": activity,
-    //     "minTime": time,
-    //     "Description": description,
-    //     "Image": image,
-    // };
-    //data.toLog.push(newActivity);
-    //var logList = data.toLog.length;
-    //console.log(logList);
-    //data[] = logList + 1;
-    // fs.writeFile("data.json", JSON.stringify(data), err => { 
-     
-    //      // Checking for errors 
-    //      if (err) throw err;  
-       
-    //     console.log("Done writing"); // Success 
-    //  }); 
     response.render('index', data);
  }
 
- 
+  // STUFF FROM JSON FILE
+  //{
+    //   "ID": "1",
+    //   "Category": "exercise",
+    //   "Activity": "Yoga",
+    //   "minTime": 30,
+    //   "Tags": "indoor",
+    //   "Image": "https://source.unsplash.com/dkg-zps94uw/1600x900",
+    //   "Link": "https://www.youtube.com/embed/b1H3xO3x_Js",
+    //   "Description": "I'm new to yoga, so this was a bit harder than I thought. Still had a great time exercising and being more mindful!"
+    // },
+    // {
+    //   "ID": "2",
+    //   "Category": "kitchen fun",
+    //   "Activity": "Bake Cookies",
+    //   "minTime": 30,
+    //   "Tags": "indoor",
+    //   "Image": "https://source.unsplash.com/tDoHiqXl9b8/1600x900",
+    //   "Link": "https://www.youtube.com/embed/uJwekkbGPns",
+    //   "Description": "Made chocolate chip cookies today! Great recipe, and 10/10 recommend!"
+    // },
+    // {
+    //   "ID": "3",
+    //   "Category": "nature",
+    //   "Activity": "Plant A Seed",
+    //   "minTime": 10,
+    //   "Tags": "outdoor",
+    //   "Image": "https://source.unsplash.com/4PG6wLlVag4/1600x900",
+    //   "Link": "https://www.youtube.com/embed/w77zPAtVTuI",
+    //   "Description": "Started growing an apple tree in the backyard! I can't wait to see how much this seed grows."
+    // }
