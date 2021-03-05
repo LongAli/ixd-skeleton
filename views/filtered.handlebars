@@ -98,20 +98,21 @@
 
 	
 	$(".complete").click(function(){
-		console.log("complete clicked");
+		//save id for complete button
+		//console.log("complete clicked");
 		var completedID = this.id;
 		localStorage.setItem("completedID", completedID);	
 		window.location.href = '/complete';
 
+		//store saved id as array for delete
 		//get the ID
-		var saveID = localStorage.getItem("currentId");
-
+		var saveID = localStorage.getItem("completedID");
 		var saveIDarr = JSON.parse(localStorage.getItem("saveIDarr"));
 		if(saveIDarr == null) saveIDarr = [];
 		// Save allEntries back to local storage
 		saveIDarr.push(saveID);
 		localStorage.setItem("saveIDarr", JSON.stringify(saveIDarr));
-	
+		//console.log("save");
 		console.log(saveIDarr);
 	});
 
