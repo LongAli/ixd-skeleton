@@ -104,8 +104,13 @@
 				</div>
 				<br>
 				<div class="card-iteminline">
+<<<<<<< HEAD
 					<button type="btn-secondary" data-toggle="modal" data-target="#myModal">
 						<a href="#" class="card-link delete" id={{ID}}>
+=======
+					<button type="btn-secondary" data-toggle="modal" data-target="#myModal{{ID}}">
+						<a href="#" class="card-link">
+>>>>>>> 6ded32a65314e91e8d0d89848840831e317e6110
 							 Delete
 						</a>
 						</button>
@@ -117,7 +122,7 @@
 						 <!-- Button to Open the Modal -->
 
 						<!-- The Modal -->
-						<div class="modal" id="myModal">
+						<div class="modal" id="myModal{{ID}}">
 						  <div class="modal-dialog">
 						    <div class="modal-content">
 
@@ -134,7 +139,9 @@
 
 						      <!-- Modal footer -->
 						      <div class="modal-footer">
-						        <button type="button" class="btn btn-danger" data-dismiss="modal" id="modal-delete">Delete</button>
+						        <button type="button" class="btn btn-danger delete" data-dismiss="modal" id={{ID}}>
+									Delete
+								</button>
 						      </div>
 
 						    </div>
@@ -149,6 +156,7 @@
 					
 			</div>
 		</div>
+			
 		{{/each}}
 
 		<br><br><br><br><br><br><br><br>
@@ -166,58 +174,29 @@
 		</form>
 	</div>
 
+<h4 id='myText' style="text-align: center;">No Activities Completed.</h4>
+
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player id='myArrow' src="https://assets1.lottiefiles.com/private_files/lf30_va0doo4d.json"  background="transparent"  speed="1"  style="width: 150px; height: 150px; transform: rotate(-30deg); position: absolute; bottom: 100px; right: 25px;"  loop autoplay></lottie-player>
+
 <script>
-	//$(".delete").click(function(){
-	//	var deleteID = $(this).attr("ID");
-	//	var activityID = $(".card").attr("ID");
-
-
-	//	console.log(deleteID);
-	//	console.log(activityID);
-		//var deleteID = Document.getElementById('.card');
-	//	var newClass = document.querySelector(".card");
-	//	if (deleteID === activityID){
-	//		$( "#"+deleteID+'.card').hide();
-	//	}
-	//})
-		//var deleted_array = JSON.parse(localStorage.getItem(deleted)); 
-		//deleted_array.push(deleteID);
-		//localStorage.set(deleted,deleted_array)
+	$('.delete').click(function () {
+		var currentIDs = JSON.parse(localStorage.getItem("saveIDarr"));
+		var targetID = $(this).attr("id");
+		localStorage.setItem("targetID", targetID);
+		window.location.href = '/deleteact?targetID='+targetID;	
 	
-		//if (deleteID == activityID){
-			//$("#foo.bar")
-			//$('deleteID').addClass("deleteclass");
-			
-			//console.log(newClass);
-			
-			//if(element.parentNode) {
-			//	ele.parentNode.removeChild(ele);
-			
-			
-			//element.parentNode.removeChild(element);
-		//}
-				//console.log(ele);
-	
-	
-		//console.log(currentID);
-
-
-		//if (ele.parentNode) {
-		//	$(".card").addClass('currentID');
-			//var currentID = $(this).attr("ID");
-				
-		//}
-
-		//console.log(ele);
-		//var ele = document.querySelector("#card");
-
-	//var button = document.querySelector("#delete");
-	//var ele = document.querySelector("#card");
-	
-	
-
-	
+    });	
+		
+	var array = JSON.parse(localStorage.getItem("saveIDarr"));
+   if(array != null){
+    	$('#myArrow').hide();
+    	$('#myText').hide();
+    }
+    
+    
 </script>
+
 </body>
 </html>
 
