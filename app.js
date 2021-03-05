@@ -20,6 +20,7 @@ var logIn = require('./routes/logIn');
 var filtered = require('./routes/filtered');
 var save = require('./routes/save');
 var welcome = require('./routes/welcome');
+var deleteact = require('./routes/deleteact');
 // Example route
 // var user = require('./routes/user');
 
@@ -61,6 +62,7 @@ app.get('/index', index.view);
 app.get('/activity/:id', activity.activityInfo);
 app.get('/save', save.saveActivity);
 app.get('/welcome', welcome.view);
+app.get('/deleteact/:id', deleteact.deleteActivity),
 
 http.createServer(app).listen(app.get('port'), function() {
 	console.log('Express server listening on port ' + app.get('port'));
