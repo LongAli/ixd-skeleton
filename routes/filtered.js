@@ -38,30 +38,10 @@ exports.view = function(request, response) {
     }
     
     
-    //console.log(results);
-
     const e = randomize(results);
     // console.log("haha");
     response.render('filtered', e);
 
-
-    //get the index of the current selected (e) activity from resutls
-
-    //avoid that index
-
-    //randomize on the rest of activities from results
-
-    // if (request.query['id']) {
-	// 	results = { activites: filterByTime(request.query['time']) };
-	// } else {
-	// 	results = activities;
-	// }
-
-
-//      $(".tryAgain").click(function(){
-//          var currentAcId = $(this).attr("id");
-//         console.log(currentAcId);
-//     });
  };
 
 

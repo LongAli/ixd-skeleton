@@ -93,18 +93,26 @@
 	$(".tryAgain").click(function(){
 		window.location.href = '/filtered?time='+localStorage.getItem("currentId");
 	});
+
+
+
 	
 	$(".complete").click(function(){
-		//get the index of the current activty
-		
+		console.log("complete clicked");
 		var completedID = this.id;
 		localStorage.setItem("completedID", completedID);	
 		window.location.href = '/complete';
 
-		//$('#' + completedID)
-		//$( "#"+deleteID+'.card').hide();
+		//get the ID
+		var saveID = localStorage.getItem("currentId");
 
-		//window.location.href = '/save?id='+localStorage.getItem("index");
+		var saveIDarr = JSON.parse(localStorage.getItem("saveIDarr"));
+		if(saveIDarr == null) saveIDarr = [];
+		// Save allEntries back to local storage
+		saveIDarr.push(saveID);
+		localStorage.setItem("saveIDarr", JSON.stringify(saveIDarr));
+	
+		console.log(saveIDarr);
 	});
 
 
