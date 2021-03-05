@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+
 /* applies to anything of class "example-class-selector" */
 body {
 	font-family: 'Rubik', sans-serif;
@@ -82,6 +84,11 @@ body {
 	color: #657dc4 !important;
 }
 
+button {
+	border: none;
+	fill: #ffffff;
+}
+
 /*primarybtn on the bottom of home page*/
 .primarybtn {
 	margin-top: 10%;
@@ -98,7 +105,7 @@ body {
 
 /*for general buttons*/
 .btn-primary {
-	font-size: 20pt;
+	font-size: 14pt;
 	background-color: #657dc4 !important;
 	border-color: #657dc4 !important;
 	border-radius: 4px;
@@ -118,9 +125,8 @@ body {
 /*things for the card on home page*/
 .card {
 	margin-bottom: 6%;
-	border: 1px solid rgba(131,142,217);
+	border: 1px solid rgba(131, 142, 217);
 	border-radius: 2%;
-
 }
 
 .card-link {
@@ -135,9 +141,9 @@ body {
 	justify-content: space-between;
 }
 
-.deleteclass{
-	display:none;
-	display:block;
+.deleteclass {
+	display: none;
+	display: block;
 	opacity: 0%;
 }
 
@@ -195,7 +201,7 @@ body {
 }
 
 /*image*/
-.card-img-top{
+.card-img-top {
 	max-height: 200pt;
 }
 
@@ -247,6 +253,7 @@ a {
 	margin-top: 35%;
 	margin-right: 5%;
 	margin-left: 5%;
+	margin-bottom: 2vh;
 }
 
 .center {
