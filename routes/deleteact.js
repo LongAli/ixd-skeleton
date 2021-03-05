@@ -12,14 +12,16 @@ var activities = require('../activites.json');
 //var storedNames = JSON.parse(localStorage.getItem("completedID"));
 
 
+//request.query['activity_index']
 
-
-function deletenow(ele) {
+function filterID(ele) {
    var searchCompleted = activities.activites.filter((a) => a.ID == ele);
    return searchCompleted;
 }
 
 exports.deleteActivity = function(request, response) {
+   const currentIDs = request.query.saveIDarr;
+console.log(currentIDs)
    console.log("starting to add friends")
 
    var newActivity;

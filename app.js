@@ -62,7 +62,7 @@ app.get('/index', index.view);
 app.get('/activity/:id', activity.activityInfo);
 app.get('/save', save.saveActivity);
 app.get('/welcome', welcome.view);
-app.get('/deleteact/:id', deleteact.deleteActivity),
+app.get('/deleteact', deleteact.deleteActivity),
 
 http.createServer(app).listen(app.get('port'), function() {
 	console.log('Express server listening on port ' + app.get('port'));
