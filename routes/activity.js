@@ -2,7 +2,7 @@
  * GET new activity.
  */
 
-var data = require('../actLog.json');
+var data = require('../activites.json');
 
 // exports.view = function(request, response) {
 // 	console.log(data);
@@ -19,7 +19,8 @@ exports.activityInfo = function(request, response) {
 	// }
 	var projectID = request.params.id;
 	//console.log(request.params.id);
-	response.render('activity', data.toLog[projectID - 1]);
+	response.render('activity', data.activites[projectID - 1]);
+	// response.render('activity', data.toLog[projectID - 1]);
 	// if (projectID == 'random') {
 	// 	projectID = Math.floor(Math.random() * projects.length) + 1;
 	// } else {

@@ -286,3 +286,13 @@ a:visited {
 	align-items: center;
 	flex-direction: column;
 }
+
+.activity-img-wrap {
+	width: 100%;
+	height: 200px;
+	margin-bottom: 5vh;
+}
+
+.activity-img {
+	width: 100%;
+}
