@@ -151,9 +151,11 @@
 					
 			</div>
 		</div>
+			
 		{{/each}}
 
 		<br><br><br><br><br><br><br><br>
+
 
 		<!--button nav-->
 		<a href="/filter">
@@ -168,6 +170,11 @@
 		</form>
 	</div>
 
+<h4 id='myText' style="text-align: center;">No Activities Completed.</h4>
+
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player id='myArrow' src="https://assets1.lottiefiles.com/private_files/lf30_va0doo4d.json"  background="transparent"  speed="1"  style="width: 150px; height: 150px; transform: rotate(-30deg); position: absolute; bottom: 100px; right: 25px;"  loop autoplay></lottie-player>
+
 <script>
 	$('.delete').click(function () {
 		var currentIDs = JSON.parse(localStorage.getItem("saveIDarr"));
@@ -176,7 +183,16 @@
 		window.location.href = '/deleteact?targetID='+targetID;	
 	
     });	
+		
+	var array = JSON.parse(localStorage.getItem("saveIDarr"));
+   if(array != null){
+    	$('#myArrow').hide();
+    	$('#myText').hide();
+    }
+    
+    
 </script>
+
 </body>
 </html>
 
