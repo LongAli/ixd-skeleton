@@ -137,6 +137,8 @@ body {
 
 .deleteclass{
 	display:none;
+	display:block;
+	opacity: 0%;
 }
 
 /*for filter only*/
@@ -190,6 +192,11 @@ body {
 /*used in About: name card*/
 .center-aligned {
 	text-align: center;
+}
+
+/*image*/
+.card-img-top{
+	max-height: 200pt;
 }
 
 .bg-modal {

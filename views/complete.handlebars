@@ -82,20 +82,24 @@
             
             
             <!-- Your share button code -->
-            <button class="btn btn-primary btn-block btnShare" href="https://a6-lacuna.herokuapp.com/" data-title="Lacuna">Share
+            <button class="btn btn-primary btn-block btnShare" href="https://a6-lacuna.herokuapp.com/" data-title="Lacuna">
+                Share
             </button>
             
         </div>
         
-        <div class="col-sm footer content-spacing">
-            <a href="/index">
-                <button type="button" class="btn btn-outline-primary btn-block btn-spacing" id="back-home">Back to home</button>
-            </a>
+        <div class="col-sm footer content-spacing backhome">
+                <button type="button" class="btn btn-outline-primary btn-block btn-spacing" id="back-home">
+                    Back to home</button>
         </div>
     </div>
     {{!-- js --}}
     
     <script>
+        $('.backhome').click(function () {
+            window.location.href = '/save?activity_index='+localStorage.getItem("completedID");
+        });
+        
         $('.btnShare').click(function () {
                 elem = $(this);
                 postToFeed(elem.data('title'), elem.data('desc'), elem.prop('href'), elem.data('image'));

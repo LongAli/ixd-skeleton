@@ -42,11 +42,9 @@
 					<iframe width="420" height="315" src={{Link}}>
 					</iframe>
 				</div> --}}
-				
-				<img class="card-img-top" src="{{Image}}" alt="Unsplash image">
-				
-				<h1 class="title">{{Activity}}</h1>
-				<h4 class="description">{{Description}}Ten minute of sun salutations with Instructor Nina.</h4>
+				<img class="card-img-top" src={{Image}} alt="Unsplash image">
+				<h1 class="title" >{{Activity}}</h1>
+				<h4 class="description">{{Description}}</h4>
 				<h3 id="timer">{{minTime}} min</h3>
 			</div>
 
@@ -56,12 +54,12 @@
 			<div class="col-12 col-sm">
 				<div class="buttons">
 					<button id="primary">Start</button>
-					{{!-- <a href="/complete"> --}}
-					<button class="complete">
-						<div class="btn btn-outline-primary btn-block">
-							Complete
-					</button>
-					{{!-- </a> --}}
+					  {{!-- <a href="/complete">  --}}
+						<button class="complete" id ={{ID}}>
+							<div class="btn btn-outline-primary btn-block">
+								Complete
+						</button>
+					{{!-- </a>  --}}
 					<button class="tryAgain">
 						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
 							<path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z" />
@@ -91,31 +89,24 @@
 </html>
 
 
-{{!-- <script type="../route" src="filtered.js">
-    $(".tryAgain").click(function(){
-        var currentAcId = $(this).attr("id");
-        console.log(currentAcId);
-		if (request.query['time']) {
-		results = { activites: filterByTime(request.query['time']) };
-		} else {
-		results = activities;
-		}
-    console.log("haha");
-		const e = randomize(results);
-
-		response.render('filtered', e);
-	});
-</script> --}}
-
 <script>
 	$(".tryAgain").click(function(){
 		window.location.href = '/filtered?time='+localStorage.getItem("currentId");
 	});
-	//$(".complete").click(function(){
+	
+	$(".complete").click(function(){
 		//get the index of the current activty
-		//var index = localStorage.getItem("currentSelect");
+		
+		var completedID = this.id;
+		localStorage.setItem("completedID", completedID);	
+		window.location.href = '/complete';
+
+		//$('#' + completedID)
+		//$( "#"+deleteID+'.card').hide();
+
 		//window.location.href = '/save?id='+localStorage.getItem("index");
-	//});
+	});
+
 
 </script>
 

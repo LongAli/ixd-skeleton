@@ -23,6 +23,9 @@ function filterByTime(time) {
 function randomize(ele) {
     const seed = Math.floor(Math.random() * 10 * Object.keys(ele).length);
     //console.log(seed);
+    //localStorage.save(seed);
+    //const 
+    //localStorage.setItem("currentSelect", currentSelect);
     const randomElement = ele.activites[parseInt(seed)];
     return randomElement;
 }
@@ -33,6 +36,7 @@ exports.view = function(request, response) {
 	} else {
 		results = activities;
     }
+    
     
     //console.log(results);
 
