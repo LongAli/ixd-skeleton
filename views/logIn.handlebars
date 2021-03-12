@@ -5,9 +5,11 @@
 	<title>LogIn</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-		integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	{{!-- <link href="/css/bootstrap.min.css" rel="stylesheet"> --}}
+	{{!-- <link href="/css/bootstrap-theme.min.css" rel="stylesheet"> --}}
 	<link href="/css/introHCI.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	{{> facebook}}
 	<!--<script src="/js/facebook.js"></script>-->
 	
@@ -21,19 +23,16 @@
 
 </head>
 <body>
-	
-	{{!-- <header class="jumbotron">
-		<div class="container">
+<br><br>
+		{{!-- <div class="container">
 			<div class="row">
 				<h1>Lacuna</h1>
 				<h1>Matata</h1>
 			</div>
-		</div>
-	</header> --}}
-	<div class="container">	
-				<img src="images/Login.svg" alt="pic">
-	</div>
-<br><br>
+		</div> --}}
+		<img src="images/Login.svg" alt="pic">
+
+<br><br><br>
 	{{!-- <div class="col-sm"> --}}
 	<div class="container">	
 		<form>
@@ -55,10 +54,11 @@
 	
 		</form>
 	{{!-- </div>	 --}}	
-		<h4> Don’t have an account yet? Create an account</h4>
+		
 	</div>
 
-		<div class="fixed-bottom">
+		<div class="fixed-bottom center-aligned">
+			<p style="font-size:11pt;"> Don’t have an account yet? Create an account</p>
 			<a href="/welcome">
 				<div class = "primarybtn">
 					<button type="button" class="btn-primary">Sign In</button>
@@ -94,11 +94,9 @@
 		</p> --}}
  
 
- 
-	{{!-- js --}}
-	<script src="https://code.jquery.com/jquery.js"></script>
-	{{!--
-	<script src="/js/bootstrap.min.js"></script> --}}
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	{{!-- js 
+	<script src="/js/bootstrap.min.js"></script>
 	<script src="/js/introHCI.js"></script>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -109,9 +107,10 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
 		integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
 		crossorigin="anonymous"></script>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery.js"></script>
+    
+    
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script> --}}
+	<script src="https://code.jquery.com/jquery.js"></script>
   </body>
 </html>

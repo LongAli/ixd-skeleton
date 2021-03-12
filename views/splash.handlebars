@@ -8,6 +8,12 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
 		integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 	<link href="/css/introHCI.css" rel="stylesheet">
+    {{!-- <link href="/css/bootstrap.min.css" rel="stylesheet"> --}}
+	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 	{{> facebook}}
 	<!--<script src="/js/facebook.js"></script>-->
 	
@@ -25,26 +31,66 @@
 
 	<div class="container">	
 
-            <div style="margin-top: 15%;"></div>
-            <h2 class="center-aligned">Welcome to</h2>
-            <h1 class="center-aligned">LacunaMatata</h1>
-            <p class="center-aligned" style="font-style: italic;">where your mind can take a break</p>
-        
-            <img src="images/as_star.svg" alt="pic">
-            {{!-- <img src="" alt="pic">  style="background-image: url(images/Blob.svg)" --}}
-                
+		<div style="margin-top: 25%;"></div>
+		<h2 class="center-aligned">Welcome to</h2>
+		<h1 class="center-aligned">LacunaMatata</h1>
+		<br>
+		<p class="center-aligned" style="font-style: italic;">where your mind can take a break</p>
+	
+		<div class="img-overlay">
+			<img id = "astro" class ="floating" src="images/astro.svg" alt="astro">
+			<img class = "grey" style="opacity:80%; margin-left: 8%;" src="images/grey.svg" alt="grey">
+			<img class = "pink" style="margin-top: -35%;" src="images/pink.svg" alt="pink">
+			<img id= "star" class ="scale" style="margin-top: -20%; margin-left:8%;" src="images/star.svg" alt="star">
+			<svg class = "bg" width="331" height="292" viewBox="0 0 331 292" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M194.003 291.08C270.096 291.08 280.883 257.228 292.42 251.008C303.958 244.787 296.785 232.303 304.352 222.887C316.439 207.847 323.764 215.598 327.764 196.086C331.765 176.574 324.492 171.055 324.492 153.634C324.492 118.733 341.212 102.211 319.861 83.9504C298.51 65.6894 262.856 67.8441 227.592 67.8441C162.14 67.8441 122.929 -21.8806 35.6317 5.03781C5.54714 14.3145 8.87211 26.9564 15.4826 71.6324C18.3531 91.0329 -3.32074 115.699 0.439776 137.746C7.30789 178.011 25.447 172.549 59.6713 199.736C65.4129 204.297 73.7871 204.249 80.0465 208.927C90.5403 216.769 91.2151 228.964 110.834 237.189C142.468 250.451 139.785 291.08 194.003 291.08Z" fill="white"/>
+				</svg>
+		</div>
 
-<br><br>
-
-		<div class="fixed-bottom center-aligned" 
-        style="text-shadow: 0px 0px 30px #FFFFFF; margin-bottom:10%; margin-top:10%">
-			<a href="/">
+		<div class="center-aligned start">
+			{{!-- logIn --}}
 				<h2>Start</h2>
-			</a>
+			{{!-- </a> --}}
 		</div>
 
 	</div>
+<script>
+	$(document).on('click', '.start', function() { 
+		$('.bg').toggleClass('animate');
+		//$("#astro").animate({right: "+=900px", bottom: "+=900px"}, 1000);
+		$("#astro").toggleClass('slide-br');
+		//$("#star").animate({left: "+=500"}, 100);
+		$(".grey").animate({
+			opacity: 0 }, 1000);
+		$(".pink").animate({
+			opacity: 0 }, 1000);
+		$("#astro").animate({
+			opacity: 0 }, 3000);
+		$("#star").animate({
+			opacity: 0 }, 3000);
+		setTimeout(function() {
+  		window.location.href = "/logIn";
+		}, 3000);
+	});
 
+//	$(".start").click(function(){
+		//setTimeout(function() {
+  		//	window.location.href = "/logIn";
+		//	}, 3000);
+		//console.log("hahah");
+//		$('.bg').toggleClass('animate');
+		//$(this).css("z-index", -3);
+		//$(".floating").toggleClass('move');
+//		$("#astro").animate({left: "+=500"}, 100);
+//		$("#star").animate({left: "+=500"}, 100);
+		//$(".floating").animate({left: "+=500"}, 2000);
+		
+//		$(".grey").animate({			opacity: 0 }, 1000);
+//		$(".pink").animate({			opacity: 0 }, 1000);
+		//$(".pink").fadeOut('opacity', 0);
+
+//	});
+</script>
 
   </body>
 </html>
