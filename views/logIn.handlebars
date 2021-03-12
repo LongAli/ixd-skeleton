@@ -23,21 +23,18 @@
 <body>
 	
 	<header class="jumbotron">
-		<div class="container">
+		{{!-- <div class="container">
 			<div class="row">
 				<h1>Lacuna</h1>
 				<h1>Matata</h1>
 			</div>
-		</div>
+		</div> --}}
 	</header>
-	<div class="container">
-		
+	<div class="container">	
 		<div class="row">
-			<div class="col-sm">
-				<img src="images/signin.svg" alt="pic" class="center">
-			</div>
+				<img src="images/Login.svg" alt="pic">
 		</div>
-		
+<br><br>
 		<div class="row">
 			<div class="col-sm">
 				<form>
@@ -50,16 +47,30 @@
 					<div class="form-group">
 						<label for="exampleInputPassword1">Password</label>
 						<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+						<small class="form-text text-muted">Forget password?</small>
 					</div>
+
 					{{!-- <div class="form-check">
 						<input type="checkbox" class="form-check-input" id="exampleCheck1">
 						<label class="form-check-label" for="exampleCheck1">Check me out</label>
 					</div> --}}
-					<a href="/welcome">
-						<button type="button" class="btn btn-primary btn-spacing btn-block">Sign In</button>
-					</a>
 					
 				</form>
+			</div>	
+		</div>
+			
+		<br><br>	
+		<h4> Don’t have an account yet? Create an account</h4>
+
+		<div class="fixed-bottom">
+			<a href="/welcome">
+				<div class = "primarybtn">
+					<button type="button" class="btn-primary">Sign In</button>
+				</div>
+			</a>
+		</div>
+
+	</div>
 				{{!-- <script src="http://connect.facebook.net/en_US/all.js">
 				</script>
 				<script>
@@ -76,8 +87,8 @@
 					<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
 					</fb:login-button>
 				</div> --}}
-			</div>
-		</div>
+	
+		
 
 
 		{{!-- <img src="../public/images/yay.jpeg"/> --}}

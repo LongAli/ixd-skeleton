@@ -1,12 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+@media (max-width: 575.98px) {
+	.container {
+		/* margin: 24px; */
+		overflow: hidden;
+	}
+	.video iframe {
+		width: 100%;
+		height: auto;
+	}
+}
 
-/* applies to anything of class "example-class-selector" */
 body {
 	font-family: 'Rubik', sans-serif;
 	font-style: normal;
 	font-weight: normal;
 }
 
+h1{
+	font-family: 'Rubik', sans-serif;
+	font-weight: normal;
+	font-size: 48px;
+	line-height: 57px;
+}
+
+h2{
+	font-family: 'Rubik', sans-serif;
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 36px;
+}
+
+h3{
+	font-family: 'Rubik', sans-serif;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 28px;
+}
+
+p{
+	font-family: 'Rubik', sans-serif;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+}
+
+h4{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 14px;
+}
+
+.jumbotron {
+	background-color: white !important;
+	margin-bottom: 0;
+	padding: 5%;
+}
+
+/* applies to anything of class "example-class-selector" */
 .example-class-selector {
 	margin-top: 2em;
 }
@@ -17,13 +68,13 @@ body {
 	color: #cc00aa;
 }
 
-.jumbotron {
-	background-color: white !important;
-}
+
 
 /*menu fixed at top & dropdown items*/
 #name {
 	color: black;
+	padding-top: 1%;
+	padding-left: 1%;
 }
 
 .name {
@@ -39,10 +90,15 @@ body {
 }
 
 .top-button {
+	padding-right: 1%;
 	margin-top: 5%;
-	margin-right: 5%;
 	display: flex;
 	justify-content: flex-end;
+}
+
+::after{
+	display: none !important;
+	/* border-bottom-color: #FFFFFF !important; */
 }
 
 .btn-secondary {
@@ -66,34 +122,47 @@ button {
 	fill: #ffffff;
 }
 
-/*primarybtn on the bottom of home page*/
+/*primarybtn position-bottom*/
 .primarybtn {
 	margin-top: 10%;
 	margin-bottom: 10%;
+	background-color: white;
+	display: flex;
+	justify-content: center;
 }
 
 /*the bottom button background*/
 .home-bottom {
-	background-color: white;
+	padding-top: 10%;
+	padding-bottom: 10%;
 	display: flex;
 	justify-content: center;
-	box-shadow: 0px 5px 15px gray;
+	background-color: white;
+	box-shadow: 0px -4px 15px rgba(0, 0, 0, 0.08);
 }
 
-/*for general buttons*/
+/*for general buttons: style*/
 .btn-primary {
-	font-size: 14pt;
+	font-family: 'Rubik', sans-serif;
+	font-weight: normal;
+	font-size: 20pt;
 	background-color: #657dc4 !important;
-	border-color: #657dc4 !important;
 	border-radius: 4px;
 	background-image: none;
 	box-shadow: none;
 	text-shadow: none;
 	background-position-y: 0;
+	width: 92%;
 }
-.btn {
+
+
+
+
+
+
+/* .btn {
 	font-size: 12pt !important;
-}
+} */
 
 .btn-spacing {
 	margin: 8px 0;
@@ -143,7 +212,7 @@ button {
 	opacity: 0%;
 }
 
-/*for filter only*/
+/*for regular bottom button & filter */
 .bottom-nav {
 	margin-top: 10%;
 	margin-bottom: 10%;
@@ -201,12 +270,10 @@ button {
 	max-height: 200pt;
 }
 
-
 .bg-modal {
 	width: 100%;
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.7);
-
 	position: absolute;
 	top: 0;
 }
@@ -246,6 +313,7 @@ a {
 	flex-direction: row;
 	align-items: center;
 }
+
 .aboutProject {
 	margin-top: 35%;
 	margin-right: 5%;
@@ -273,9 +341,6 @@ a:visited {
 	text-decoration: none;
 }
 
-.container {
-	overflow: hidden;
-}
 
 .fb-login {
 	display: flex;
@@ -294,3 +359,59 @@ a:visited {
 	width: 100%;
 	height: 30vh;
 }
+
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Rubik', sans-serif;
+}
+
+.content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+p {
+	margin-top: 1rem;
+}
+
+.time-display {
+	bottom: 10%;
+	color: white;
+	font-size: 50px;
+}
+
+.buttons button {
+	height: 48px;
+	width: 300px;
+	margin-top: 1rem;
+	border-radius: 6px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+/* 
+#primary {
+	color: white;
+	border-style: none;
+	background-color: #074ee8;
+}
+
+#secondary {
+	color: #074ee8;
+	border: 2px solid #074ee8;
+} 
+
+.buttons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+*/
+

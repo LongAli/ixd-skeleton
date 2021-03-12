@@ -21,6 +21,7 @@ var filtered = require('./routes/filtered');
 var save = require('./routes/save');
 var welcome = require('./routes/welcome');
 var deleteact = require('./routes/deleteact');
+var splash = require('./routes/splash');
 // Example route
 // var user = require('./routes/user');
 
@@ -48,6 +49,7 @@ if ('development' == app.get('env')) {
 
 // Add routes here
 app.get('/', logIn.view);
+app.get('/splash', splash.view);
 app.get('/filter', filter.view);
 app.get('/filter2', filter2.view);
 app.get('/filter3', filter3.view);

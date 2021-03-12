@@ -12,13 +12,59 @@
 
 </head>
 <body>
-	</br></br></br></br></br></br>
+	</br></br></br></br>
 	<div class="container">
-		<h1 class="card-title">Welcome! </h1>
-		</br></br>
-		<h4>Let's set up reminders for when to take a break before we get started.</h4>
-		</br></br></br></br>
-		<a href="/setting" style="float: right"><button type="button" class="btn btn-primary btn" id="home">Next</button></a>
+		<h1>Welcome!</h1>
+		<p>Let's set up reminders first</p>
+</br></br>
+		<div class="row ">
+			<div class="col-12 col-sm row-content">
+				{{!-- <h3>Reminders</h3> --}}
+				<p>How often do you want to get notification to take a break?</p>
+				<form class="input-group" onsubmit="signup(e)">
+					<select class="custom-select" id="inputGroupSelect04">
+						<option selected>Choose One</option>
+						<option value="1">Daily</option>
+						<option value="2">Every 2 days</option>
+						<option value="3">Every 3 days</option>
+						<option value="3">Every 4 days</option>
+						<option value="3">Weekly</option>
+					</select>
+					{{!-- <div class="input-group-append">
+						<button class="btn btn-outline-secondary" type="submit" id="save-time">Save</button>
+					</div> --}}
+				</form>
+			</div>
+			<div class="col-12 col-sm form-content">
+				<p>What time of the day do you want to get notifications?</p>
+				<form class="input-group" onsubmit="signup(e)">
+					<select class="custom-select" id="inputGroupSelect05">
+						<option selected>Choose One</option>
+						<option value="1">Morning</option>
+						<option value="2">Afternoon</option>
+						<option value="3">Evening</option>
+					</select>
+					{{!-- <div class="input-group-append">
+						<button class="btn btn-outline-secondary" type="submit" id="save-when">Save</button>
+					</div> --}}
+				</form>
+			</div>
+		</div>
+
+		<br><br><br><br><br><br>
+		<a href="/index">
+			<h4 class="center-aligned" style="color:#828282">Skip for now</h4>
+		</a>
+
+		<div class="fixed-bottom">
+			<a href="/index">
+				<div class = "primarybtn">
+					<button type="button" class="btn-primary">Save</button>
+				</div>
+			</a>
+		</div>
+
+
 	</div>
   </body>
 </html>
