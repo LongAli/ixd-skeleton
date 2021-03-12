@@ -23,57 +23,57 @@
 		</svg>
 	</a>
 
-	<div class="container">
-    <div class="jumbotron fixed-top">
+
+    <div class="fixed-top filter-top">
 		<a href="/index">
 			<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#212529" class="bi bi-chevron-left" viewBox="0 0 24 24">
 				<path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
 			</svg>
 			<h1 id="name" style ="display:inline;">Activity for you</h1>
 		</a>   
-		</div>
-		<br><br><br>
-		<div class="row">
-			
-			
-			<div class="col-12 col-sm content">
+	</div>
+<br><br><br>
+
+			{{!-- <div class="col-12 col-sm content"> --}}
 				
 				{{!-- <div class="video">
 					<iframe width="420" height="315" src={{Link}}>
 					</iframe>
 				</div> --}}
-				<img class="card-img-top" src={{Image}} alt="Unsplash image">
-				<h1 class="title" >{{Activity}}</h1>
-				<h4 class="description">{{Description}}</h4>
-				<h3 id="timer">{{minTime}} min</h3>
-			</div>
+	<img class="card-img-top" src={{Image}} alt="Unsplash image">
+	<div class="container">
+			<br><br>
+			<h1 class="title" >{{Activity}}</h1>
+			<br>
+			<p class="description">{{Description}}</p>
 
-		</div>
-		<br><br>
-		<div class="row">
-			<div class="col-12 col-sm">
-				<div class="buttons">
-					{{!-- <a href="/complete">  --}}
-					<button class="tryAgain">
+
+
+	</div>	
+
+
+			<div class="fixed-bottom center-aligned">
+
+				<h1 id="timer">{{minTime}} min</h1>
+
+				<div class="col-sm">
+						
+					<p class="tryAgain">
 						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
-							<path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z" />
-							<path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z" />
+						<path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z" />
+						<path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z" />
 						</svg>
-						Try Another
-					</button>
-					<br>
-					<button id="primary" class="btn-primary">Start</button>
-					<button class="complete btn-secondary" id ={{ID}}>
-						{{!-- <div class="btn btn-outline-primary btn-block" > --}}
-						Complete
-					</button>
-					{{!-- </a>  --}}
-
+						Try Another</p>
+				</div>
+				<div class = "primarybtn" id={{ID}}>
+					<button id="primary" type="button" class="btn-primary">Start</button>
 				</div>
 			</div>
-		</div>
-		
-	</div>
+
+					{{!-- <button class="complete btn-secondary" id ={{ID}}>
+						Complete
+					</button> --}}
+					{{!-- </a>  --}}
 	
 	{{!-- js --}}
 	<script src="/js/timer.js"></script>
@@ -96,27 +96,50 @@
 		window.location.href = '/filtered?time='+localStorage.getItem("currentId");
 	});
 
+	$(document).on('click', '#primary', function() { 
+		console.log("primary selected!");
+		$(this).attr("id","secondary");
+		$(this).removeClass('btn-primary').addClass('secondarybtn');
+		$(this).text("Complete!");
+		$(".tryAgain").text("Finish early?");
+		$(".tryAgain").css("color", "#212529");
+		});
 
-
-	
-	$(".complete").click(function(){
-		//save id for complete button
-		//console.log("complete clicked");
-		var completedID = this.id;
+	$(document).on('click', '#secondary', function() { 
+		var completedID = $(".primarybtn").attr("id");
 		localStorage.setItem("completedID", completedID);	
 		window.location.href = '/complete';
-
-		//store saved id as array for delete
-		//get the ID
-		//var saveID = localStorage.getItem("completedID");
+		//console.log(getID);
 		var saveIDarr = JSON.parse(localStorage.getItem("saveIDarr"));
 		if(saveIDarr == null) saveIDarr = [];
 		// Save allEntries back to local storage
 		saveIDarr.push(completedID);
 		localStorage.setItem("saveIDarr", JSON.stringify(saveIDarr));
+		});
+
+	// $(document).ready(function() {
+		//$("#secondary").click(function(){
+		//$(this).attr("id","primary");
+		//$(this).removeClass('btn-primary').addClass('secondarybtn');
+		//$(this).text("Complete!");
+	//s	$(this).addClass("complete");
+
+
+	
+//$(".complete").click(function(){
+		//save id for complete button
+		//console.log("complete clicked");
+		//var completedID = this.id;
+		//localStorage.setItem("completedID", completedID);	
+		//window.location.href = '/complete';
+
+		//store saved id as array for delete
+		//get the ID
+		//var saveID = localStorage.getItem("completedID");
+	
 		//console.log("save");
 		//console.log(saveIDarr);
-	});
+	//s});
 
 
 </script>

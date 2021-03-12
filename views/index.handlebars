@@ -45,7 +45,7 @@
 								<a href="/index"> <button class="dropdown-item active" type="button">Home</button> </a>
 								<a href="/setting"> <button class="dropdown-item" type="button">Setting</button></a>
 								<a href="/about"> <button class="dropdown-item" type="button">About</button></a>
-								<a href="/logIn"> <button class="dropdown-item" type="button" style="background-color: grey; color: white;">Log Out</button></a>						
+								<a href="/logIn"> <button class="dropdown-item" type="button">Log out</button></a>						
 							</div>
 						</div>
 				</div>
@@ -67,7 +67,7 @@
 		</div>
 		--> 
 
-<br><br><br><br><br>
+<br><br><br><br><br><br><br>
 
 	{{!-- <form id="addFriendForm" role="form" method="get" action="/add"></form> --}}
 	
@@ -136,19 +136,16 @@
 			</div>
 		</div>	
 		{{/each}}
-	</div>
+	
 	</form>
 
 <br><br><br><br>
-		<div id='myText' style="text-align: center; color:#828282;" >
-			<img style="align-items: center;" src="images/index.svg" alt="pic">
+
+			<img id ='myImage' src="images/index.svg" alt="pic">
 			<br><br><br><br>
-			<p>No activity in the log yet.<br>Start now!</p>
-		</div>
-
+			<p id='myText' style="text-align: center; color:#828282;">No activity in the log yet.<br>Start now!</p>
+	</div>
 	
-
-
 
 		<!--button nav-->
 		<div class="fixed-bottom">
@@ -173,7 +170,7 @@
 		
 	var array = JSON.parse(localStorage.getItem("saveIDarr"));
    if(array != null){
-		$('#myimage').hide();
+		$('#myImage').hide();
     	$('#myArrow').hide();
     	$('#myText').hide();
     }
