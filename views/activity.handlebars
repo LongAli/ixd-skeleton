@@ -8,20 +8,59 @@
 		integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 	<link rel="stylesheet" href="/css/styles.css">
 	<link rel="stylesheet" href="/css/introHCI.css">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="/css/introHCI.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
 	<script src="/js/loadStuff.js"></script>
-	
 
+    <div class="fixed-top filter-top">
+		<a href="/index">
+			<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#000000"
+					class="bi bi-x" viewBox="0 0 16 16">
+					<path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+			</svg>
+		</a>   
+	</div>
+
+<br><br><br><br><br><br>
+	<img class="card-img-top" src={{Image}} alt="Unsplash image">
 	<div class="container">
+			<br><br>
+			<h1 class="title" >{{Activity}}</h1>
+			<br>
+			<p class="description">{{Description}}</p>
+
+
+
+	</div>	
+
+			<div class="fixed-bottom center-aligned">
+
+				<h1 id="timer">{{minTime}} min</h1>
+
+				<div class="col-sm">
+						<br><br><br><br><br><br><br><br><br><br><br><br>
+					{{!-- <p class="tryAgain">
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+						<path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z" />
+						<path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z" />
+						</svg>
+						Try Another</p> --}}
+				</div>
+				<div class = "primarybtn" id={{ID}}>
+					<button id="primary" type="button" class="btn-primary">Start</button>
+				</div>
+			</div>
+
+	{{!-- <div class="container">
 		<div class="row">
 			<a href="/index">
-				<svg style="margin-top:5%; margin-left:5%;" xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#000000"
-					class="bi bi-x" viewBox="0 0 16 16">
-					<path
-						d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
-				</svg>
+				
 			</a>
 			<div class="col-sm content">
 				<h3 class="title">{{Activity}}</h3>
@@ -45,7 +84,7 @@
 			</div>
 		</div>
 		
-	</div>
+	</div> --}}
 	
 	{{!-- js --}}
 	{{!-- <script>
@@ -65,5 +104,25 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
 		integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
 		crossorigin="anonymous"></script>
+	<script>
+	$(document).on('click', '#primary', function() { 
+		console.log("primary selected!");
+		$(this).attr("id","secondary");
+		$(this).removeClass('btn-primary').addClass('secondarybtn');
+		$(this).text("Complete!");
+		});
+
+	$(document).on('click', '#secondary', function() { 
+		//var completedID = $(".primarybtn").attr("id");
+		//localStorage.setItem("completedID", completedID);	
+		window.location.href = '/index';
+		//console.log(getID);
+		//var saveIDarr = JSON.parse(localStorage.getItem("saveIDarr"));
+		//if(saveIDarr == null) saveIDarr = [];
+		// Save allEntries back to local storage
+		//saveIDarr.push(completedID);
+		//localStorage.setItem("saveIDarr", JSON.stringify(saveIDarr));
+		});
+	</script>
 </body>
 </html>
