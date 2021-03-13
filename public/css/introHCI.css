@@ -69,7 +69,9 @@ h4{
 	color: #cc00aa;
 }
 
-
+.custom-select{
+	font-size: 12pt !important;
+}
 
 /*menu fixed at top & dropdown items*/
 #name {
